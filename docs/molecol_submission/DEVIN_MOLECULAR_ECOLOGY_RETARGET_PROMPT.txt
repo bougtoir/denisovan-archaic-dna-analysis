@@ -1,0 +1,706 @@
+You are Devin operating in ONE SINGLE VM and ONE canonical working tree.
+
+PROJECT
+Retarget the finalized Human Genetics manuscript to Molecular Ecology (Wiley).
+
+SOURCE STATE
+Use the latest scientifically validated, hostile-reviewed, submission-ready Human Genetics package as the source of truth.
+
+Likely source package:
+HUMAN_GENETICS_SUBMISSION_READY_FINAL_v2.zip
+
+CURRENT MANUSCRIPT TITLE
+"Population structure defines the null expectation for pairwise genomic similarity: archaic-segment sharing across 66 human populations"
+
+TARGET JOURNAL
+Molecular Ecology
+
+PRIMARY GOAL
+Produce a submission-ready Molecular Ecology package by retargeting the manuscript toward POPULATION GENOMICS + POPULATION STRUCTURE + EVOLUTIONARY INFERENCE + DEPENDENCE-AWARE PAIRWISE COMPARISON, while preserving human archaic-segment sharing as the empirical demonstration.
+
+This is NOT a new scientific project, NOT a re-analysis project, and NOT a full rewrite from scratch.
+
+======================================================================
+1. VERIFY CURRENT MOLECULAR ECOLOGY REQUIREMENTS FIRST
+======================================================================
+
+Before editing, verify the CURRENT official Molecular Ecology:
+- Aims and Scope
+- article types
+- editorial priorities
+- whether descriptive population-genetics papers are deprioritized
+- expectations for broader ecological/evolutionary significance
+- manuscript format
+- abstract limits
+- keyword requirements
+- title-page requirements
+- word limits if any
+- figure/table limits
+- reference style
+- data archiving policy
+- code availability policy
+- supplementary-material rules
+- preprint policy
+- AI/LLM disclosure policy
+- peer-review model
+- cover-letter requirements
+- publication-fee policy
+- traditional/non-OA route
+- whether page charges exist
+- optional OA route and APC
+- color figure charges, if any
+
+Use authoritative Wiley / Molecular Ecology sources only.
+
+Create:
+MOLECULAR_ECOLOGY_REQUIREMENTS_AUDIT.md
+
+Explicitly verify whether the traditional subscription route is available without mandatory APC or page charges.
+
+======================================================================
+2. CORE RETARGETING STRATEGY
+======================================================================
+
+For Molecular Ecology, reposition the paper as:
+
+A POPULATION-GENOMIC INFERENCE PAPER
+
+whose general scientific question is:
+
+"When repeated populations contribute to a matrix of pairwise genomic comparisons, how should an apparently exceptional pair be judged against the broader population structure?"
+
+Human archaic ancestry remains the empirical test bed.
+
+Do NOT force ecological language where it does not belong.
+Do NOT pretend the study directly measures ecology.
+Do NOT manufacture conservation or environmental relevance.
+
+The broader relevance should be inferential/evolutionary, not artificially ecological.
+
+The contribution is NOT:
+- invention of QAP,
+- discovery that population structure matters,
+- discovery of new archaic introgression,
+- a new human migration route,
+- a descriptive survey of population similarity,
+- a new ABO discovery.
+
+The contribution IS:
+1. identifying repeated-population dependence as a specific inferential vulnerability in pairwise genomic comparisons;
+2. defining a population-wide relational structural null for judging exceptional pairwise similarity;
+3. operationalizing a workflow combining complete pairwise similarity matrices, population-label permutation / QAP, pair-level residual testing, and multiplicity control;
+4. showing that visually or biologically compelling pairwise similarities may cease to be exceptional after broader structure is respected;
+5. demonstrating the framework using archaic-segment sharing across 66 human populations;
+6. showing through ABO that a focal locus can appear narratively salient without exceeding genome-wide structural expectation.
+
+======================================================================
+3. ANALYSIS FREEZE
+======================================================================
+
+ALL validated scientific analyses are frozen.
+
+Do NOT:
+- add datasets,
+- add populations,
+- add loci,
+- add simulations,
+- add ecological covariates,
+- add environmental variables,
+- add external validation,
+- change QAP models,
+- alter residual definitions,
+- change FDR thresholds,
+- add subgroup analyses,
+- add leave-one-out analyses,
+- add power analysis,
+- search for significant pairs.
+
+Do NOT change:
+- effect estimates,
+- P values,
+- q values,
+- z scores,
+- sample counts,
+- population counts,
+- pair counts,
+- ABO statistics.
+
+Rerun existing code only if required to regenerate unchanged outputs or verify consistency.
+
+If any scientific value changes unexpectedly:
+STOP and investigate.
+
+======================================================================
+4. TITLE
+======================================================================
+
+Evaluate whether the current title is suitable for Molecular Ecology.
+
+Current title:
+"Population structure defines the null expectation for pairwise genomic similarity: archaic-segment sharing across 66 human populations"
+
+Potential alternatives:
+1. "Population structure defines the null expectation for pairwise genomic similarity"
+2. "Testing exceptional pairwise genomic similarity against population-wide structure"
+3. "A structural null for exceptional pairwise genomic similarity"
+4. Keep the current title.
+
+Choose the title that best balances:
+- general genetics/population-genomics relevance,
+- transparency about the empirical system,
+- no overclaiming.
+
+Do NOT change automatically.
+
+Create:
+MOLECULAR_ECOLOGY_TITLE_DECISION.md
+
+======================================================================
+5. ABSTRACT
+======================================================================
+
+Retarget the Abstract toward population-genomic and evolutionary inference.
+
+Required logic:
+1. Pairwise genomic comparisons are widely used to infer population structure, connectivity, shared ancestry, introgression, and exceptional evolutionary relationships.
+2. Such pairwise observations are non-independent because the same populations recur across multiple comparisons.
+3. An apparently unusual pair may therefore reflect broader structure rather than pair-specific history.
+4. The manuscript operationalizes a structural null using population-label permutation / QAP, pair-level residuals, and FDR.
+5. Empirical demonstration:
+   - 3,134 individuals
+   - 66 populations
+   - 2,145 population pairs
+   - Neanderthal and Denisovan segment profiles
+6. Preserve all verified numerical results.
+7. No pair survived the prespecified residual/FDR rule.
+8. ABO did not exceed genome-wide structural background.
+9. General implication: pair-specific genomic claims should be evaluated against broader relational structure before being given special evolutionary explanations.
+
+Do NOT over-emphasize human clinical genetics or ABO.
+
+======================================================================
+6. INTRODUCTION
+======================================================================
+
+Do NOT rebuild from scratch.
+
+Preserve the successful architecture:
+1. pairwise comparisons are common;
+2. repeated units induce non-independence;
+3. structural null;
+4. QAP / matrix permutation;
+5. closest prior studies;
+6. archaic ancestry as empirical system;
+7. ABO as worked example;
+8. study questions.
+
+Retarget emphasis:
+
+A. OPEN BROADLY
+Begin from population-genomic/evolutionary pairwise inference rather than exclusively human population history.
+
+B. BROADER EXAMPLES
+Use a concise set of genuinely relevant examples:
+- introgression,
+- population connectivity,
+- hybrid zones,
+- population genomic similarity,
+- spatial structure.
+
+Do not add a long catalog.
+
+C. HUMAN APPLICATION
+Introduce human archaic ancestry as a particularly informative demonstration because:
+- geographic structure is strong,
+- introgression history is complex,
+- pair-specific historical narratives are tempting,
+- public genomic resources permit complete-matrix analysis.
+
+D. ABO
+Keep subordinate.
+
+E. ENDING
+End primarily on a general population-genomic inference question, with the human system as the demonstration.
+
+======================================================================
+7. MANDATORY MOLECULAR ECOLOGY CITATION ECOLOGY
+======================================================================
+
+Run a targeted literature audit focused on Molecular Ecology and adjacent population-genomics literature.
+
+Search for:
+- population structure
+- isolation by distance
+- landscape/population genomics
+- introgression
+- hybridization
+- population connectivity
+- matrix-based inference
+- pairwise genomic similarity
+- dyadic dependence
+- QAP / Mantel / MRQAP
+- genomic distance matrices
+- exceptional population-pair inference
+
+Create:
+MOLECULAR_ECOLOGY_CITATION_ECOLOGY.md
+
+Identify 5-10 genuinely closest prior studies.
+
+For each:
+- citation
+- biological system
+- research question
+- data
+- method
+- estimand
+- main result
+- overlap with current paper
+- exact distinction
+
+Then assess:
+- whether Molecular Ecology has a real bibliographic neighborhood for this paper;
+- whether current references adequately position the manuscript;
+- whether any missing Molecular Ecology paper is an obvious citation gap.
+
+Do NOT cite Molecular Ecology papers merely to game journal fit.
+
+Every added citation must support a real scientific claim.
+
+======================================================================
+8. CLOSEST PRIOR STUDIES / NOVELTY GATE
+======================================================================
+
+Create:
+MOLECULAR_ECOLOGY_CLOSEST_PRIOR_STUDIES.md
+
+Explicitly distinguish:
+
+KNOWN:
+- population structure can bias or distort evolutionary inference;
+- Mantel/QAP are established;
+- spatial/genetic distance matrices are widely used;
+- introgression signals can be geographically structured.
+
+CURRENT CONTRIBUTION:
+- pair-specific genomic similarity claims are evaluated against a structural null preserving repeated-population dependence;
+- pair-level residual evidence is placed inside the same relational framework;
+- multiplicity is controlled across the family of population pairs;
+- empirical demonstration shows that apparently unusual pairs need not remain exceptional.
+
+Ask explicitly:
+
+"Would a skeptical Molecular Ecology editor see this as merely another Mantel/QAP application?"
+
+If YES or MAYBE:
+strengthen the inferential framing and biological relevance in text.
+
+If prior work substantially collapses novelty:
+STOP and classify NOT READY.
+
+======================================================================
+9. METHODS
+======================================================================
+
+Scientific Methods remain frozen.
+
+Only improve presentation/ordering if Molecular Ecology style benefits.
+
+Ensure a reader can distinguish:
+- pairwise genomic similarity
+- population-wide structural model
+- QAP permutation
+- fitted structural expectation
+- residual
+- residual z score
+- nominal pair-level P value
+- FDR q value
+
+Preserve caveats:
+- model is descriptive, not causal;
+- structural null is conditional on model specification;
+- geographic distance is one major component, not the totality of population structure;
+- similarity is not identity by descent;
+- same-continent / same-dataset / admixture indicators are coarse covariates.
+
+======================================================================
+10. RESULTS
+======================================================================
+
+Keep the current Results structure:
+1. Archaic-segment similarity shows broad population structure
+2. No population pair exceeds the structural expectation after multiplicity control
+3. Population-wide structure is robust to analytical choices
+4. ABO does not exceed the genome-wide structural background
+
+No new findings.
+No numerical changes.
+Minimal rhetoric.
+
+======================================================================
+11. DISCUSSION
+======================================================================
+
+Retarget toward population-genomic inference.
+
+Suggested order:
+1. Principal empirical result
+2. Repeated-unit dependence as a general population-genomic inferential issue
+3. Novelty boundary vs Mantel/QAP / population-structure literature
+4. Implications for introgression and population-history interpretation
+5. ABO worked example
+6. Limitations
+7. Transferability to other population-genomic systems
+
+Strengthen relevance to introgression studies, population connectivity, hybridization, and spatial genetic structure only where genuinely appropriate.
+
+Do NOT claim these systems were empirically tested.
+
+Allowed:
+"the same inferential vulnerability may arise in other pairwise population-genomic settings"
+
+Not allowed:
+"the framework is validated across ecological systems"
+
+======================================================================
+12. NEGATIVE RESULT POSITIONING
+======================================================================
+
+Create:
+MOLECULAR_ECOLOGY_NEGATIVE_RESULT_AUDIT.md
+
+Ensure the Discussion clearly explains:
+- zero FDR-supported pairs is scientifically informative;
+- apparently unusual pairwise similarities can be explained by broader structure;
+- the study distinguishes visually salient from statistically exceptional pairs;
+- modest pair-specific effects could remain undetected;
+- no supported residual excess does not mean no shared history;
+- the negative result directly supports the structural-null argument.
+
+Do NOT add power analysis.
+
+======================================================================
+13. FIGURES AND TABLES
+======================================================================
+
+Preserve validated Figures 1-5 unless technical requirements force re-export.
+
+Figure 1 is especially important.
+
+Ensure Figure 1 communicates:
+- repeated populations,
+- pairwise non-independence,
+- naive interpretation,
+- structural expectation,
+- permutation,
+- residual testing,
+- multiplicity control.
+
+It should be intelligible to a population ecologist/evolutionary geneticist without human-specific knowledge.
+
+Keep empirical figures scientifically unchanged.
+
+Reassess whether Table 1 showing "no qualifying pair" should remain in the main manuscript.
+
+Ask:
+- does it improve transparency?
+- is Figure 4 sufficient?
+- would moving Table 1 to Supplement improve narrative economy?
+
+Do NOT delete automatically.
+
+Create:
+MOLECULAR_ECOLOGY_FIGURE_TABLE_DECISIONS.md
+
+If moved:
+do not alter numbers.
+
+======================================================================
+14. SUPPLEMENT / DATA / CODE
+======================================================================
+
+Use the latest corrected internally consistent files.
+
+Preserve:
+- Supplementary Data descriptions,
+- formal Supplementary Data vs reproducibility archive distinction,
+- data provenance,
+- public code availability.
+
+Do NOT reintroduce earlier metadata inconsistencies.
+
+Review current Molecular Ecology data-archiving policy carefully.
+
+If deposition in Dryad or another repository is required at a specific stage, follow the current policy.
+
+Do not claim a DOI that does not exist.
+
+======================================================================
+15. AI / LLM DISCLOSURE
+======================================================================
+
+Preserve the existing truthful disclosure.
+Modify only if Molecular Ecology / Wiley requires a different heading or placement.
+Do not expand beyond actual use.
+
+======================================================================
+16. ETHICS / INDIGENOUS DATA GOVERNANCE
+======================================================================
+
+Preserve the current careful treatment of:
+- public secondary human genomic data,
+- source-study consent/approval,
+- Indigenous genomic data governance,
+- no new participant contact,
+- no route assignment from these data.
+
+Keep concise.
+
+======================================================================
+17. COVER LETTER — HIGH PRIORITY
+======================================================================
+
+Create a NEW Molecular Ecology cover letter.
+
+Use FIRST PERSON SINGULAR ("I").
+
+Tone:
+high-energy, precise, scientifically calibrated.
+
+The letter must communicate:
+
+1. PROBLEM
+Pairwise genomic comparisons are fundamental in population genetics and evolutionary genomics, but repeated use of the same populations makes dyads non-independent.
+
+2. GAP
+Population structure is known and matrix-permutation methods are established, yet exceptional population-pair claims are often interpreted without an explicit relational null preserving repeated-unit structure.
+
+3. CONTRIBUTION
+The paper operationalizes:
+- full-matrix structural expectation,
+- population-label permutation,
+- pair-level residual testing,
+- FDR control.
+
+4. EMPIRICAL SYSTEM
+3,134 individuals
+66 human populations
+2,145 population pairs
+Neanderthal and Denisovan segment-sharing profiles.
+
+5. MAIN FINDING
+Strong broad structure; no pair remains FDR-supported as exceptional; ABO is unexceptional relative to genome-wide structural background.
+
+6. WHY MOLECULAR ECOLOGY
+Explain relevance to:
+- population genomics,
+- population structure,
+- introgression,
+- evolutionary interpretation,
+- pairwise genomic comparison across structured populations.
+
+7. NEGATIVE RESULT VALUE
+Explain why "no exceptional pair" is informative.
+
+8. NOVELTY BOUNDARY
+Explicitly state:
+- QAP is established;
+- population structure is established;
+- novelty lies in the inferential framing/workflow and empirical demonstration.
+
+9. PRIOR REJECTIONS
+Do NOT mention Heredity or Human Genetics unless explicitly requested by the submission portal.
+
+======================================================================
+18. HOSTILE MOLECULAR ECOLOGY REVIEW
+======================================================================
+
+Perform four adversarial reviews:
+
+A. MOLECULAR ECOLOGY EDITOR
+Ask:
+- Is the paper sufficiently broad?
+- Is it more than descriptive human population genetics?
+- Is there a meaningful evolutionary question?
+- Is the general inference contribution strong enough?
+- Is the human system acceptable for Molecular Ecology?
+- Is the negative result editorially interesting?
+
+B. POPULATION GENETICIST
+Ask:
+- Are population-structure interpretations sound?
+- Is the distance relationship overread?
+- Is introgression interpretation calibrated?
+- Are sample-size and dataset heterogeneity addressed?
+
+C. STATISTICAL GENETICIST
+Ask:
+- Is the structural null coherent?
+- Are QAP and residual inference accurately described?
+- Is FDR treatment defensible?
+- Is this more than standard MRQAP?
+
+D. EVOLUTIONARY ECOLOGIST
+Ask:
+- Can a non-human population genomicist understand why this matters?
+- Does the paper have broader evolutionary relevance?
+- Is ecological generalization restrained and credible?
+
+Create:
+MOLECULAR_ECOLOGY_HOSTILE_REVIEW.md
+
+Classify:
+- BLOCKING
+- MAJOR
+- MINOR
+- NO ISSUE
+
+Fix all BLOCKING and MAJOR issues that do not require new analysis.
+
+======================================================================
+19. FINAL SCIENTIFIC CONSISTENCY AUDIT
+======================================================================
+
+Verify against canonical outputs:
+- 3,134 individuals
+- 66 populations
+- 2,145 total pairs
+- 62 non-admixed populations
+- 1,891 non-admixed pairs
+- Neanderthal r = -0.497
+- Denisovan r = -0.462
+- partial r = -0.369 and -0.326
+- permutation P = 0.0001 and 0.0002
+- largest residual z values
+- minimum q values
+- zero supported pairs
+- ABO Neanderthal z / percentile / P
+- ABO Denisovan z / percentile / P
+- window counts
+- Table S1 values
+
+No numerical drift.
+
+======================================================================
+20. REFERENCE QC
+======================================================================
+
+Reformat all references to CURRENT Molecular Ecology style.
+
+Audit:
+- authors
+- title capitalization
+- journal title/abbreviation
+- year
+- volume
+- pages/article number
+- DOI formatting
+- punctuation
+
+Validate any newly added citations.
+
+Create:
+MOLECULAR_ECOLOGY_REFERENCE_AUDIT.md
+
+======================================================================
+21. SUBMISSION FORMAT QC
+======================================================================
+
+Apply current Molecular Ecology submission rules.
+
+Verify:
+- title page
+- review/anonymization model
+- figure placement
+- table placement
+- supplementary material format
+- data-archiving statement
+- AI disclosure
+- ethics statements
+- cover letter
+- file naming
+- line numbering
+- word count
+- abstract word count
+- keyword count
+
+Create:
+MOLECULAR_ECOLOGY_SUBMISSION_FORMAT_AUDIT.md
+
+======================================================================
+22. FINAL OUTPUTS
+======================================================================
+
+Produce:
+1. MOLECULAR_ECOLOGY_MAIN_MANUSCRIPT.docx
+2. MOLECULAR_ECOLOGY_MAIN_MANUSCRIPT_inline_review.docx
+3. MOLECULAR_ECOLOGY_TITLE_PAGE.docx
+4. MOLECULAR_ECOLOGY_COVER_LETTER.docx
+5. MOLECULAR_ECOLOGY_SUPPORTING_INFORMATION.docx
+6. validated data archive / data-detail files as required
+7. main figures
+8. supplementary figures
+9. tables
+10. MOLECULAR_ECOLOGY_REQUIREMENTS_AUDIT.md
+11. MOLECULAR_ECOLOGY_TITLE_DECISION.md
+12. MOLECULAR_ECOLOGY_CLOSEST_PRIOR_STUDIES.md
+13. MOLECULAR_ECOLOGY_CITATION_ECOLOGY.md
+14. MOLECULAR_ECOLOGY_NEGATIVE_RESULT_AUDIT.md
+15. MOLECULAR_ECOLOGY_FIGURE_TABLE_DECISIONS.md
+16. MOLECULAR_ECOLOGY_HOSTILE_REVIEW.md
+17. MOLECULAR_ECOLOGY_REFERENCE_AUDIT.md
+18. MOLECULAR_ECOLOGY_SUBMISSION_FORMAT_AUDIT.md
+19. SUBMISSION_CHECKLIST_MOLECULAR_ECOLOGY.md
+20. FINAL_HANDOFF_MOLECULAR_ECOLOGY.md
+21. DEVIN_MOLECULAR_ECOLOGY_RETARGET_PROMPT.txt
+
+Final package:
+MOLECULAR_ECOLOGY_SUBMISSION_FINAL.zip
+
+======================================================================
+23. FINAL_HANDOFF_MOLECULAR_ECOLOGY.md MUST INCLUDE
+======================================================================
+
+A. final title
+B. selected article type
+C. why the paper fits Molecular Ecology
+D. what changed from Human Genetics version
+E. explicit confirmation that analysis remained frozen
+F. key numerical results
+G. exact novelty statement
+H. closest-prior-study boundary
+I. whether the paper is more than a QAP/Mantel application, and why
+J. negative-result significance
+K. figure/table decisions
+L. reference-style status
+M. data/code availability status
+N. exact publication-fee status:
+   - traditional route available?
+   - mandatory APC?
+   - page charges?
+   - optional OA APC?
+O. exact upload-ready filenames
+P. unresolved local-author items
+Q. final verdict:
+   READY FOR MOLECULAR ECOLOGY SUBMISSION
+   or
+   NOT READY — with specific blocker
+
+======================================================================
+STOP CONDITION
+======================================================================
+
+Do not open a new scientific workstream.
+Do not add analyses merely to improve perceived novelty.
+Do not force ecological claims unsupported by the data.
+
+The objective is to maximize Molecular Ecology fit by:
+- framing the work as a population-genomic inference problem;
+- preserving the human archaic-ancestry empirical demonstration;
+- clarifying broader evolutionary relevance;
+- distinguishing the paper from routine QAP/Mantel application;
+- explaining the scientific value of the negative pair-level result;
+- maintaining strict claim calibration;
+- applying current Wiley / Molecular Ecology formatting and archiving rules.
+
+Stop only when genuinely submission-ready or when a concrete novelty/scientific blocker remains.

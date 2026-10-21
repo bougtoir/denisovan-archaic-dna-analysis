@@ -1,0 +1,354 @@
+You are Devin operating in ONE SINGLE VM and ONE canonical working tree.
+
+PROJECT
+Human Genetics final submission-format finishing pass
+
+TARGET JOURNAL
+Human Genetics (Springer Nature)
+
+INPUT
+Use the latest hostile-reviewed Human Genetics submission package as the sole source of truth.
+
+Likely package:
+HUMAN_GENETICS_SUBMISSION_HOSTILE_REVIEWED_FINAL.zip
+
+PRIMARY GOAL
+Perform a VERY NARROW final formatting/compliance pass before submission.
+
+DO NOT reopen the science.
+DO NOT rerun analyses.
+DO NOT revise the conceptual framing.
+DO NOT add new citations.
+DO NOT add new figures.
+DO NOT change validated numerical results.
+
+Only fix the three submission-format issues below, plus one minor acknowledgement-placement cleanup if needed.
+
+======================================================================
+NON-NEGOTIABLE SCIENTIFIC FREEZE
+======================================================================
+
+Do NOT change:
+- title unless a technical submission requirement forces it;
+- Abstract scientific content;
+- Results;
+- Discussion;
+- QAP implementation;
+- residual definitions;
+- FDR thresholds;
+- P values;
+- q values;
+- z scores;
+- sample sizes;
+- population counts;
+- pair counts;
+- ABO results;
+- figure content;
+- table content;
+- supplementary scientific content.
+
+No new analysis.
+No new literature search.
+No new hostile review.
+No new novelty rewrite.
+
+If any scientific number changes unexpectedly:
+STOP and investigate.
+
+======================================================================
+TASK 1 — COMPLETE THE TITLE PAGE
+======================================================================
+
+Inspect the CURRENT Human Genetics submission guidelines from the official Springer Nature / Human Genetics site and verify the required Title Page elements.
+
+Known missing items to fix if confirmed by current guidance:
+- Abstract
+- Keywords
+- ORCID
+
+Create a corrected title page containing all required elements.
+
+Required content should include, as applicable:
+- full article title
+- article type
+- author name
+- affiliation
+- corresponding author details
+- ORCID
+- running title if required
+- manuscript word count if required
+- Abstract
+- 4-6 Keywords
+- Acknowledgements if the journal requests Acknowledgements on the Title Page
+- any other currently required title-page metadata
+
+Use the EXISTING manuscript Abstract exactly unless minor formatting changes are needed.
+Do NOT alter scientific wording in the Abstract.
+
+Use the existing 4-6 manuscript keywords unless Human Genetics requires another count.
+Do NOT invent clinically oriented keywords that do not fit the paper.
+
+Ensure ORCID is the validated author ORCID already present in the package.
+
+Output:
+HUMAN_GENETICS_TITLE_PAGE_SUBMISSION_FINAL.docx
+
+======================================================================
+TASK 2 — CREATE A CORRECT "STATEMENTS AND DECLARATIONS" SECTION
+======================================================================
+
+Verify the CURRENT Human Genetics official requirement for placement and naming of declarations.
+
+If the current guide requires:
+
+"Statements and Declarations"
+
+after the References section, implement exactly that.
+
+The final submission manuscript should have:
+
+References
+
+Statements and Declarations
+
+with the relevant subsections underneath.
+
+Reorganize the existing declaration material without changing its substantive meaning.
+
+Likely subsections include:
+- Funding
+- Competing Interests / Conflict of Interest
+- Author Contributions
+- Data Availability
+- Ethics Approval / Ethics Statement
+- Consent to Participate / Consent for Publication, if applicable or required
+- AI / Generative AI disclosure, if already part of the manuscript/package
+- any other declaration currently required by the journal
+
+IMPORTANT:
+- Do NOT invent declarations that are not applicable.
+- If "Not applicable" wording is required, use concise journal-standard wording.
+- Preserve existing ethics/data-governance wording unless only relocating it.
+- Preserve existing AI disclosure wording unless Human Genetics requires a heading/placement change.
+- Do NOT expand or embellish the AI disclosure.
+
+Acknowledgements:
+If current Human Genetics instructions place Acknowledgements on the Title Page rather than in the main manuscript, remove the duplicate Acknowledgements section from the main manuscript and retain it on the Title Page only.
+
+======================================================================
+TASK 3 — USE THE INLINE FIGURE MANUSCRIPT AS THE OFFICIAL SUBMISSION MANUSCRIPT
+======================================================================
+
+Verify the CURRENT Human Genetics figure-submission rule.
+
+If current guidance states that figures should be submitted within the body of the text:
+
+- use the current inline manuscript as the basis for the official submission manuscript;
+- ensure Figures 1-5 are ALL embedded;
+- confirm each figure appears after or near its first citation;
+- preserve separate figure source files in the package if useful, but do not make them the primary manuscript representation unless the submission portal requires it.
+
+Audit all five main figures:
+Figure 1
+Figure 2
+Figure 3
+Figure 4
+Figure 5
+
+Confirm:
+- all are embedded,
+- captions are present,
+- numbering is sequential,
+- no duplicate figure,
+- no missing figure,
+- no broken image,
+- no accidental author-identifying content in figures if anonymous review is used.
+
+Rename the final official manuscript clearly:
+
+HUMAN_GENETICS_MAIN_MANUSCRIPT_SUBMISSION_FINAL.docx
+
+This file should be the upload-ready article file.
+
+Do not use the non-inline / image-free manuscript as the primary submission file if that contradicts current journal instructions.
+
+======================================================================
+TASK 4 — UPDATE THE SUBMISSION CHECKLIST
+======================================================================
+
+Correct any stale checklist text that says:
+- figures must be uploaded separately,
+- figures should not be embedded,
+or equivalent language,
+if that contradicts current Human Genetics instructions.
+
+The final checklist must clearly state which file is the PRIMARY ARTICLE FILE.
+
+Explicitly identify:
+
+PRIMARY ARTICLE FILE:
+HUMAN_GENETICS_MAIN_MANUSCRIPT_SUBMISSION_FINAL.docx
+
+TITLE PAGE:
+HUMAN_GENETICS_TITLE_PAGE_SUBMISSION_FINAL.docx
+
+COVER LETTER:
+current final Human Genetics cover letter
+
+SUPPLEMENTARY INFORMATION:
+current validated final supplementary information
+
+DATA ARCHIVE:
+current validated Human Genetics data archive
+
+Update:
+SUBMISSION_CHECKLIST_FINAL.md
+
+======================================================================
+DOUBLE-ANONYMISED / ANONYMISED REVIEW CHECK
+======================================================================
+
+Verify the current Human Genetics peer-review model.
+
+If anonymised review is required or supported:
+
+- ensure the main article file contains no author names,
+- no affiliation,
+- no correspondence details,
+- no ORCID,
+- no identifying acknowledgements,
+unless the journal explicitly permits them in the main file.
+
+Keep identifying metadata in the Title Page only when appropriate.
+
+If Human Genetics uses single-anonymised review instead, do not unnecessarily anonymise beyond journal requirements.
+
+Document the current review model in the final handoff.
+
+======================================================================
+FORMAT QC
+======================================================================
+
+For the two final DOCX files:
+
+- open and render successfully;
+- no tracked changes;
+- no comments;
+- black visible text;
+- consistent font/style;
+- no stray markdown;
+- no broken section headings;
+- no missing references;
+- no figure-number mismatch;
+- no duplicated Abstract;
+- no duplicated Acknowledgements;
+- no duplicated declarations;
+- no orphaned heading.
+
+Do not convert mathematical content to images.
+Preserve native Word formatting where applicable.
+
+======================================================================
+CURRENT REQUIREMENTS CHECK
+======================================================================
+
+Create a short:
+HUMAN_GENETICS_FINAL_FORMAT_REQUIREMENTS_CHECK.md
+
+Record only the requirements relevant to this finishing pass:
+
+- Title Page required elements
+- Abstract length
+- keyword count
+- ORCID placement
+- Acknowledgements placement
+- Statements and Declarations heading
+- Statements and Declarations placement
+- figure placement rule
+- peer-review anonymisation model
+- primary manuscript file expectation
+
+Cite authoritative official URLs in the markdown audit.
+
+======================================================================
+FINAL PACKAGE
+======================================================================
+
+Create:
+
+1. HUMAN_GENETICS_MAIN_MANUSCRIPT_SUBMISSION_FINAL.docx
+2. HUMAN_GENETICS_TITLE_PAGE_SUBMISSION_FINAL.docx
+3. HUMAN_GENETICS_COVER_LETTER_FINAL.docx
+   - preserve current validated cover letter unless only filename normalization is needed
+4. HUMAN_GENETICS_SUPPORTING_INFORMATION_FINAL.docx
+   - preserve current validated content
+5. data_archive_humangen.zip
+   - preserve current validated archive unchanged
+6. SUBMISSION_CHECKLIST_FINAL.md
+7. HUMAN_GENETICS_FINAL_FORMAT_REQUIREMENTS_CHECK.md
+8. FINAL_HANDOFF_HUMAN_GENETICS_SUBMISSION.md
+
+Package into:
+
+HUMAN_GENETICS_SUBMISSION_READY_FINAL.zip
+
+Do NOT include obsolete duplicate manuscript versions in the upload-ready folder unless clearly placed in an internal/archive subfolder.
+
+======================================================================
+FINAL HANDOFF
+======================================================================
+
+FINAL_HANDOFF_HUMAN_GENETICS_SUBMISSION.md must state:
+
+1. Final verdict:
+READY FOR HUMAN GENETICS SUBMISSION
+or
+NOT READY — with exact blocker
+
+2. Analysis freeze:
+CONFIRMED / NOT CONFIRMED
+
+3. Scientific values changed:
+NO / YES
+
+4. Title Page:
+- Abstract included
+- Keywords included
+- ORCID included
+- Acknowledgements placement correct
+
+5. Statements and Declarations:
+- heading present
+- position after References correct
+- subsections listed
+
+6. Figures:
+- Figures 1-5 embedded
+- primary article file identified
+
+7. Review model:
+state whether the manuscript is anonymised or not and why
+
+8. Exact upload-ready files
+
+9. Any remaining LOCAL AUTHOR COMPLETION items
+
+======================================================================
+STOP CONDITION
+======================================================================
+
+This is the FINAL formatting pass.
+
+Do not broaden the task.
+Do not reopen the hostile review.
+Do not add new scientific edits.
+Do not add new analyses.
+
+Fix only:
+- Title Page completeness,
+- Statements and Declarations placement/heading,
+- inline figure manuscript as the primary article file,
+- checklist consistency,
+- acknowledgement placement if needed.
+
+Then rebuild the final submission-ready ZIP and stop.

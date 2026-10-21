@@ -1,0 +1,80 @@
+You are Devin operating in ONE SINGLE VM and ONE canonical working tree.
+
+PROJECT
+Human Genetics final one-line consistency fix
+
+INPUT
+Use the current final package:
+HUMAN_GENETICS_SUBMISSION_READY_FINAL.zip
+
+GOAL
+Fix ONLY the remaining inconsistency between the manuscript Code Availability statement and the cover letter.
+
+Do NOT change any scientific content.
+Do NOT rerun analyses.
+Do NOT alter figures, tables, references, Abstract, Results, Discussion, Supplementary Information, Title Page, or Cover Letter unless required solely for filename/package consistency.
+
+======================================================================
+REQUIRED FIX
+======================================================================
+
+The current cover letter states that the analysis code and derived outputs are publicly available through the project repository.
+
+The manuscript currently contains wording approximately equivalent to:
+
+"Analysis scripts, aggregate derived data, and figures ... are available from the corresponding author and will be archived with a persistent DOI before acceptance."
+
+This is inconsistent with the fact that the public GitHub repository already exists.
+
+Replace the manuscript Code Availability statement with wording consistent with the actual public state.
+
+Preferred wording:
+
+Code Availability
+
+Analysis scripts, aggregate derived data, and figures are publicly available at:
+https://github.com/bougtoir/denisovan-archaic-dna-analysis
+
+The final archived release will be assigned a persistent DOI before acceptance.
+
+Before finalizing, verify that:
+- the repository URL is correct and publicly accessible;
+- the canonical ABO focal-window script referenced by the manuscript is present in the repository;
+- no stronger archival claim is made than is currently true.
+
+Do NOT state that a persistent DOI already exists unless it actually exists.
+
+======================================================================
+PACKAGE REBUILD
+======================================================================
+
+Regenerate only the files affected by this wording change.
+
+At minimum:
+1. HUMAN_GENETICS_MAIN_MANUSCRIPT_SUBMISSION_FINAL.docx
+2. FINAL_HANDOFF_HUMAN_GENETICS_SUBMISSION.md
+3. SUBMISSION_CHECKLIST_FINAL.md only if it contains stale Code Availability wording
+4. final ZIP:
+   HUMAN_GENETICS_SUBMISSION_READY_FINAL_v2.zip
+
+Preserve all other validated files unchanged.
+
+======================================================================
+FINAL CHECK
+======================================================================
+
+Confirm:
+- manuscript and cover letter now describe code availability consistently;
+- GitHub repository is public;
+- no scientific numerical value changed;
+- no figure/table changed;
+- no references changed;
+- no submission-format structure changed.
+
+Final verdict must be:
+
+READY FOR HUMAN GENETICS SUBMISSION
+
+unless a genuine repository-accessibility problem remains.
+
+STOP after this single consistency fix.

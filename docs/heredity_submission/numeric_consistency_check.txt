@@ -1,0 +1,1 @@
+PASS: All checked numeric values from correction_stats.json, analysis_provenance.json, abo_focal_test.json, and pairwise_sharing_corrected.csv are present in manuscript_heredity.docx.

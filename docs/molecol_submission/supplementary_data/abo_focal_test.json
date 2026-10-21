@@ -1,0 +1,20 @@
+{
+  "abo_chromosome": "chr9",
+  "abo_window_start": 133000000,
+  "bin_size": 500000,
+  "populations": 62,
+  "pairs": 1891,
+  "minimum_nonzero_populations": 10,
+  "nean_usable_windows": 3843,
+  "nean_abo_max_excess_z": 1.7800778543670575,
+  "nean_background_median": 1.5551398809602768,
+  "nean_background_p95": 2.5974409454649185,
+  "nean_abo_percentile": 64.29872495446266,
+  "nean_abo_empirical_p": 0.3572729638303409,
+  "deni_usable_windows": 1385,
+  "deni_abo_max_excess_z": 0.6345965040702676,
+  "deni_background_median": 0.9580833616127423,
+  "deni_background_p95": 2.033564155571156,
+  "deni_abo_percentile": 8.014440433212997,
+  "deni_abo_empirical_p": 0.9205776173285198
+}

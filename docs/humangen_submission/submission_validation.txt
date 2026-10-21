@@ -1,0 +1,24 @@
+Human Genetics SUBMISSION VALIDATION
+==========================
+
+Summary words: 228
+Main-text words: 4493
+References: 31
+Uncited references: []
+First-appearance figure order: [1, 2, 3, 4, 5]
+First-appearance supporting figure order: [1, 2, 3, 4, 5, 6, 7]
+First-appearance table order: [1]
+
+PASS: Author-date citations
+PASS: Every reference cited
+PASS: References alphabetised
+PASS: Figure first-appearance order
+PASS: Supporting figure first-appearance order
+PASS: Table first-appearance order
+PASS: No placeholder strings
+PASS: Running title under 150 characters
+PASS: Summary within 150-250 words
+PASS: Four to six keywords
+PASS: All figure source files present
+PASS: All supporting figure source files present
+PASS: References present
