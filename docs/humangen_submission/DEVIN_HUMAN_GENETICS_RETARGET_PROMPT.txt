@@ -1,0 +1,820 @@
+You are Devin operating in ONE SINGLE VM and ONE canonical working tree.
+
+PROJECT
+Retarget the finalized Heredity manuscript to HUMAN GENETICS (Springer Nature).
+
+SOURCE STATE
+Use the latest scientifically validated and internally consistent Heredity manuscript package and data archive as the source of truth.
+
+The paper's current title is approximately:
+
+"Population structure defines the null expectation for pairwise genomic similarity: archaic-segment sharing across 66 human populations"
+
+The manuscript has already undergone extensive restructuring and consistency QC.
+
+TARGET JOURNAL
+Human Genetics
+Springer Nature
+
+CURRENT JOURNAL CONTEXT TO VERIFY BEFORE EDITING
+Human Genetics currently describes itself as covering all aspects of human genetics, with topics spanning gene structure and organization to genetic epidemiology and related human-genetics fields. It uses a hybrid publishing model and currently permits a traditional publishing route without publication charges except optional/special services.
+
+Do NOT rely only on this prompt for journal requirements.
+At the start of the task, verify the CURRENT:
+- Aims and Scope
+- article types
+- manuscript format
+- abstract requirements
+- word limits, if any
+- figure/table requirements
+- reference style
+- data/code availability requirements
+- AI/LLM disclosure policy
+- cover-letter expectations
+- submission file structure
+- publication-charge policy
+using authoritative Springer Nature / Human Genetics sources.
+
+Create:
+HUMAN_GENETICS_REQUIREMENTS_AUDIT.md
+
+======================================================================
+OVERALL STRATEGY
+======================================================================
+
+This is NOT a full scientific rewrite.
+
+The Heredity version already solved the central conceptual problem and should remain the basis of the paper.
+
+The task is a TARGETING REVISION:
+
+FROM:
+a general-genetics framing designed to justify relevance across many species and systems
+
+TO:
+a human population genetics / human evolutionary genetics / statistical genetics framing in which archaic-segment sharing across human populations is clearly the primary biological application.
+
+Preserve the structural-null concept.
+
+Preserve the core inferential contribution:
+
+"Pair-specific genomic similarity should be evaluated against a population-wide relational null that preserves the non-independence generated when the same populations recur across pairwise comparisons."
+
+Do NOT:
+- revert to an ABO-centered manuscript;
+- revert to a migration-route paper;
+- claim a new permutation method;
+- claim that population structure bias is newly discovered;
+- overgeneralize beyond the evidence;
+- add exploratory analyses.
+
+======================================================================
+SCIENTIFIC IDENTITY FOR HUMAN GENETICS
+======================================================================
+
+The revised manuscript should read as:
+
+A HUMAN POPULATION-GENETICS / HUMAN EVOLUTIONARY-GENETICS STUDY
+with a dependence-aware statistical framework for interpreting pairwise archaic-segment similarity.
+
+The hierarchy should be:
+
+PRIMARY BIOLOGICAL DOMAIN
+- human population genetics
+- human evolutionary genetics
+- archaic introgression
+- population structure
+
+PRIMARY INFERENTIAL CONTRIBUTION
+- structural null for pairwise genomic similarity
+- dependence-aware population-pair inference
+- distinction between broad structure and pair-specific excess
+
+SECONDARY METHOD
+- population-label permutation / QAP
+- pair-level residual inference
+- FDR control
+
+FOCAL WORKED EXAMPLE
+- ABO
+
+ABO must remain subordinate.
+
+======================================================================
+ANALYSIS FREEZE
+======================================================================
+
+ALL scientific analyses are frozen.
+
+Do NOT:
+- add datasets,
+- add populations,
+- add loci,
+- rerun QAP for new results,
+- change residual definitions,
+- alter inclusion/exclusion rules,
+- change window sizes,
+- change FDR procedures,
+- add subgroup analyses,
+- add leave-one-out analyses,
+- alter ABO results,
+- modify effect estimates,
+- modify P values,
+- modify q values.
+
+Rerun code only if required to regenerate unchanged tables/figures/documents.
+
+If any numerical result changes unexpectedly:
+STOP,
+investigate,
+and document the discrepancy.
+
+======================================================================
+TITLE
+======================================================================
+
+Evaluate the existing title first:
+
+"Population structure defines the null expectation for pairwise genomic similarity: archaic-segment sharing across 66 human populations"
+
+The current title is likely suitable for Human Genetics because it combines:
+- a general inferential message,
+- pairwise genomic similarity,
+- a clearly human empirical system.
+
+Do NOT change it merely for novelty.
+
+Only change the title if:
+- current Human Genetics title conventions strongly favor a shorter form,
+- or citation-ecology review shows a substantially clearer human-genetics framing.
+
+Possible alternatives to consider, but NOT automatically adopt:
+
+1.
+"Population structure defines the null expectation for pairwise archaic-segment similarity"
+
+2.
+"A structural null for exceptional pairwise archaic-segment similarity across human populations"
+
+Prefer the existing title unless a clear improvement is demonstrated.
+
+Document the final title decision and rationale.
+
+======================================================================
+ABSTRACT
+======================================================================
+
+Retain the current quantitative Abstract structure unless Human Genetics formatting requires modification.
+
+The Abstract must clearly communicate:
+
+1. human population-genetic problem;
+2. repeated-population non-independence;
+3. structural-null logic;
+4. 3,134 individuals;
+5. 66 populations;
+6. 2,145 population pairs;
+7. Neanderthal and Denisovan archaic-segment profiles;
+8. population-label permutation / QAP;
+9. geographic-distance association;
+10. no FDR-supported exceptional pair;
+11. ABO did not exceed the genome-wide structural expectation;
+12. implication for human evolutionary/population-genetic inference.
+
+Compared with the Heredity version:
+- slightly reduce "all species/systems" language;
+- slightly strengthen relevance to human population history and archaic-introgression interpretation.
+
+Do NOT overload the Abstract with clinical genetics language.
+This is not a clinical study.
+
+======================================================================
+INTRODUCTION — TARGETED RETUNING ONLY
+======================================================================
+
+Do NOT rebuild the Introduction from scratch.
+
+The current architecture is strong:
+
+1. pairwise comparisons in population genetics;
+2. repeated-unit non-independence;
+3. structural null / QAP logic;
+4. closest prior work on population structure and inferential distortion;
+5. archaic ancestry as the empirical human system;
+6. ABO as a worked example;
+7. three study questions.
+
+Preserve that architecture.
+
+TARGETED CHANGES:
+
+A. HUMAN-GENETICS RELEVANCE
+Strengthen the connection to:
+- human population history,
+- archaic introgression,
+- geographic structure of human genomic variation,
+- interpretation of exceptional pairwise similarities among human populations.
+
+B. GENERALIZATION
+Retain some broader applicability, but reduce the long list of:
+- demes,
+- strains,
+- breeds,
+- sampling locations,
+etc.
+
+For Human Genetics, the final Introduction should end primarily on:
+"human population-genetic inference"
+rather than on cross-species generality.
+
+C. CLOSEST PRIOR STUDIES
+Retain the important novelty-boundary studies:
+- Mazet et al.
+- Tournebize & Chikhi
+- Ortega-Del Vecchyo & Slatkin
+where substantively justified.
+
+Then perform a HUMAN GENETICS-specific citation ecology search.
+
+======================================================================
+MANDATORY CITATION ECOLOGY / CLOSEST PRIOR STUDIES GATE
+======================================================================
+
+Before finalizing the target revision, perform a targeted literature audit.
+
+Search:
+1. Human Genetics
+2. closely related human-population-genetics journals
+3. recent literature on:
+   - human population structure,
+   - archaic introgression,
+   - pairwise population comparison,
+   - demographic-model misspecification,
+   - dependence-aware genomic inference,
+   - QAP / matrix permutation where relevant.
+
+Create:
+HUMAN_GENETICS_CITATION_ECOLOGY.md
+
+The audit must contain:
+
+A. CLOSEST PRIOR STUDIES
+Identify 5-10 genuinely closest papers.
+
+For each:
+- citation;
+- research question;
+- data;
+- variables;
+- method;
+- estimand;
+- result;
+- scientific implication;
+- overlap with the current manuscript;
+- exact difference from the current manuscript.
+
+B. HUMAN GENETICS JOURNAL NEIGHBORHOOD
+Identify recent/relevant Human Genetics papers that establish that the journal publishes:
+- population genetics,
+- human evolutionary genetics,
+- geographic population structure,
+- statistical/genomic methods,
+when actually present.
+
+Do NOT cite papers merely because they appeared in Human Genetics.
+
+Every journal-specific citation added to the manuscript must support a real scientific claim.
+
+C. NOVELTY BOUNDARY
+State explicitly:
+
+Known:
+population structure can distort demographic/evolutionary inference.
+
+Current addition:
+when the same human populations recur across pairwise genomic comparisons, exceptional pairwise similarity should be tested against a relational structural null preserving repeated-population dependence.
+
+If a closest prior paper substantially overlaps this contribution:
+STOP and report the overlap before continuing.
+
+======================================================================
+METHODS
+======================================================================
+
+Methods should remain scientifically unchanged.
+
+Only adapt:
+- terminology,
+- section ordering if Human Genetics requires it,
+- formatting,
+- data/code statements,
+- disclosure statements,
+- journal-specific presentation.
+
+Keep Methods dry and empirical.
+
+Do NOT add rhetoric.
+
+Preserve:
+- 500-kb windows;
+- Neanderthal / Denisovan profiles;
+- QAP permutations;
+- residual testing;
+- FDR;
+- sensitivity analyses;
+- ABO focal analysis;
+- ethics/data-governance disclosures where appropriate.
+
+Ensure all mathematical notation in DOCX is native Word OMML when structured math is required.
+
+======================================================================
+RESULTS
+======================================================================
+
+Keep the current four-part scientific Results structure:
+
+1.
+Archaic-segment similarity shows broad population structure
+
+2.
+No population pair exceeds the structural expectation after multiplicity control
+
+3.
+Population-wide structure is robust to analytical choices
+
+4.
+ABO does not exceed the genome-wide structural background
+
+Do NOT introduce new findings.
+
+Keep Results rhetoric near zero.
+
+Preserve all exact validated numbers.
+
+======================================================================
+DISCUSSION — HUMAN GENETICS RETARGETING
+======================================================================
+
+Preserve the current Discussion's claim calibration.
+
+Retune emphasis as follows:
+
+A. OPENING
+Keep the main result:
+broad human population structure dominates pairwise archaic-segment similarity, and no pair remains exceptional after dependence-aware/multiplicity-aware evaluation.
+
+B. NOVELTY BOUNDARY
+Retain explicit acknowledgement that:
+- population structure distorting evolutionary inference is known;
+- QAP is established;
+- the contribution is the pair-specific structural-null workflow.
+
+C. HUMAN EVOLUTIONARY INTERPRETATION
+Slightly strengthen the discussion of what this means for:
+- archaic ancestry comparisons;
+- human population-history narratives;
+- pair-specific gene-flow / shared-history interpretations.
+
+D. ABO
+Keep ABO to approximately one focused paragraph.
+Do NOT re-expand it.
+
+E. BROADER GENERALIZATION
+Shorten the broad non-human examples.
+A concise final statement that the inferential logic may extend to other repeated-unit genomic comparisons is sufficient.
+
+F. LIMITATIONS
+Preserve:
+- sparse Denisovan calls outside Oceania;
+- modest population sizes;
+- approximate coordinates;
+- no common callable mask;
+- identity-by-state vs identity-by-descent limitation;
+- technical heterogeneity;
+- conservativeness of the pair-level test;
+- no claim that lack of excess similarity means lack of shared history.
+
+======================================================================
+CONCLUSION
+======================================================================
+
+Keep short.
+
+For Human Genetics, end on a HUMAN POPULATION-GENETIC inference message.
+
+Preferred logic:
+
+- archaic-segment similarity across human populations is strongly structured;
+- no tested population pair or ABO focal comparison exceeded the structural expectation;
+- pair-specific interpretations of human genomic similarity should be tested against population-wide relational structure before being assigned a special historical explanation.
+
+Do not end primarily on general non-human applicability.
+
+======================================================================
+FIGURES AND TABLES
+======================================================================
+
+Preserve the validated figures unless Human Genetics technical specifications require re-export.
+
+Maintain:
+
+Figure 1:
+conceptual structural-null workflow
+
+Figure 2:
+archaic-segment similarity vs geographic distance
+
+Figure 3:
+population-wide similarity structure
+
+Figure 4:
+pair-specific residual evidence
+
+Figure 5:
+robustness
+
+Supplement:
+S1-S7 and Table S1 as scientifically validated.
+
+Do NOT create new figures solely for journal targeting.
+
+Audit:
+- figure citation order,
+- table citation order,
+- numbering,
+- legends,
+- resolution,
+- font legibility,
+- grayscale/color requirements,
+- file format.
+
+If Human Genetics permits/encourages color without charge, preserve scientifically useful color.
+
+======================================================================
+SUPPLEMENTARY MATERIAL
+======================================================================
+
+Use the corrected consistent versions of:
+- supporting_information_heredity_consistent.docx
+- data_detail_consistent.docx
+- data_consistent.zip
+or their canonical equivalents.
+
+Do NOT reintroduce any previously corrected inconsistencies.
+
+Verify that Supplementary Data 5, 6, 8, 9, 10 retain their corrected descriptions.
+
+Verify the distinction between:
+- formal Supplementary Data files,
+- additional reproducibility/intermediate/auxiliary derived files.
+
+Do not enlarge the supplement unnecessarily.
+
+If Human Genetics does not require a separate data-detail file, determine whether:
+- it should remain a supplementary README/data note,
+- be integrated into the archive,
+- or be omitted from journal upload while retained in the repository.
+
+======================================================================
+DATA / CODE AVAILABILITY
+======================================================================
+
+Review current Human Genetics policies.
+
+Preserve accurate links and provenance for:
+- Zenodo source segment calls,
+- Dryad source ancient data,
+- public GitHub analysis repository,
+- derived-data archive.
+
+Do not claim repository deposition that has not occurred.
+
+Ensure all public-code statements are true.
+
+Verify:
+abo_window_focal_test.py
+or the canonical equivalent
+is actually present in the public/reproducibility code state if referenced.
+
+======================================================================
+AI / LLM DISCLOSURE
+======================================================================
+
+Preserve the author's existing finalized disclosure unless Human Genetics policy requires a specific structural or heading change.
+
+Do NOT expand the disclosure unnecessarily.
+
+Do NOT add tools or uses that were not actually employed.
+
+The author assumes responsibility for all content.
+
+======================================================================
+ETHICS / INDIGENOUS DATA GOVERNANCE
+======================================================================
+
+Preserve the careful existing treatment of:
+- public secondary genomic data;
+- no new recruitment;
+- source-study approvals/consent;
+- Indigenous genomic records;
+- CARE principles / governance context;
+- avoidance of assigning migration routes from these data.
+
+Do not make the paper more ethically defensive than necessary.
+
+Do not delete these sections unless Human Genetics explicitly requires their relocation.
+
+======================================================================
+COVER LETTER — HIGH PRIORITY
+======================================================================
+
+Create a NEW cover letter specifically for Human Genetics.
+
+Cover-letter rhetorical intensity:
+HIGH but scientifically calibrated.
+
+Use FIRST PERSON SINGULAR ("I"), not "we", because this is a single-author manuscript.
+
+The cover letter should communicate:
+
+1. WHAT PROBLEM
+Pairwise population comparisons are ubiquitous in human genetics, but repeated use of the same populations makes the dyads non-independent.
+
+2. WHAT THE PAPER DOES
+It defines an operational structural expectation for pairwise archaic-segment similarity using population-label permutation, pair-level residuals, and multiplicity control.
+
+3. WHAT WAS FOUND
+Across 3,134 individuals in 66 human populations:
+- strong population-wide geographic structure;
+- no FDR-supported exceptional pair;
+- ABO did not exceed the genome-wide background.
+
+4. WHY IT MATTERS
+The study separates:
+"this pair looks similar"
+from
+"this pair is more similar than human population structure predicts."
+
+This is relevant to human population-genetic and evolutionary interpretation.
+
+5. WHY HUMAN GENETICS
+Make the fit explicit using the journal's verified scope:
+- human genetics;
+- population/evolutionary genetics if currently stated or demonstrated by journal content;
+- quantitative/statistical genomic interpretation.
+
+Do not force clinical relevance.
+
+6. NOVELTY BOUNDARY
+State accurately that:
+- population structure causing inferential bias is known;
+- QAP is established;
+- this paper's contribution is the explicit structural-null workflow for pair-specific genomic-similarity claims.
+
+7. PRIOR HEREDITY SUBMISSION
+Do NOT mention the Heredity rejection unless the Human Genetics submission system explicitly asks about prior submissions to another journal.
+Do not refer to HDY manuscript numbers in the Human Genetics cover letter.
+
+8. EXCLUSIVITY / AUTHORSHIP
+Include standard declarations if required:
+- not under consideration elsewhere;
+- all material approved by the author;
+- conflicts/funding as appropriate.
+
+======================================================================
+COVER LETTER STYLE
+======================================================================
+
+The cover letter should NOT read as an administrative summary.
+
+It should make the editor understand:
+- why the question matters;
+- what inference is commonly vulnerable;
+- what this study adds;
+- why Human Genetics readers should care.
+
+Avoid hype such as:
+- "paradigm shift",
+- "first-ever",
+- "revolutionary".
+
+Prefer:
+- precise,
+- confident,
+- high-energy,
+- evidence-based language.
+
+======================================================================
+MANUSCRIPT FORMATTING QC
+======================================================================
+
+Apply current Human Genetics instructions.
+
+Unless journal rules specify otherwise:
+
+- Times New Roman;
+- body 12 pt;
+- figure/table captions 10 pt where suitable;
+- visible font color black;
+- no tracked changes in final clean submission;
+- no comments;
+- no stray markdown asterisks;
+- consistent heading hierarchy;
+- consistent paragraph spacing;
+- native Word equations/OMML;
+- figures/tables cited in strict numerical order.
+
+Do not let Word style definitions override the visible formatting.
+
+Check both:
+- direct run formatting,
+- Word style definitions.
+
+======================================================================
+RUNNING TITLE
+======================================================================
+
+Preserve or revise the current running title only if Human Genetics requests one.
+
+If required, keep concise.
+
+Preferred:
+"A structural null for pairwise similarity"
+
+Ensure it meets any verified character limit.
+
+======================================================================
+REFERENCE / CITATION QC
+======================================================================
+
+Reformat all references to CURRENT Human Genetics style.
+
+Do not assume Heredity reference style carries over.
+
+Audit:
+- author truncation;
+- year;
+- title capitalization;
+- journal abbreviation/full title;
+- volume;
+- pages/article number;
+- DOI formatting;
+- punctuation.
+
+Validate all newly added Human Genetics-specific references from authoritative bibliographic sources.
+
+Do not delete relevant prior citations merely to shorten the list.
+
+======================================================================
+HOSTILE EDITORIAL REVIEW GATE
+======================================================================
+
+After revision, perform a dedicated hostile review.
+
+Create:
+HUMAN_GENETICS_HOSTILE_REVIEW.md
+
+Review from three perspectives:
+
+A. HUMAN GENETICS EDITOR
+Ask:
+- Is this clearly a human-genetics paper?
+- Is the biological question important enough for Human Genetics?
+- Does the statistical framing serve human genetics rather than overshadow it?
+- Is the paper more than a methodological re-description of QAP?
+
+B. HUMAN POPULATION GENETICIST
+Ask:
+- Are archaic introgression claims biologically calibrated?
+- Is population structure handled appropriately?
+- Does the absence of pair-level excess get overinterpreted?
+- Are closest prior studies acknowledged?
+
+C. STATISTICAL GENETICIST
+Ask:
+- Is the structural-null logic correct?
+- Is dependence preservation explained accurately?
+- Are pair-level residual P values/FDR represented correctly?
+- Is methodological novelty claimed conservatively?
+
+Assign:
+- BLOCKING
+- MAJOR
+- MINOR
+- NO ISSUE
+
+Fix all BLOCKING and MAJOR issues that can be resolved without new analysis.
+
+======================================================================
+FINAL SCIENTIFIC QC
+======================================================================
+
+Verify every major value against the canonical data archive:
+
+- 3,134 individuals
+- 66 populations
+- 2,145 total pairs
+- 62 non-admixed populations
+- 1,891 non-admixed pairs
+- Neanderthal r = -0.497
+- Denisovan r = -0.462
+- partial correlations -0.369 and -0.326
+- permutation P = 0.0001 and 0.0002
+- largest residual z values
+- minimum q values
+- zero supported pairs
+- ABO Neanderthal z / percentile / P
+- ABO Denisovan z / percentile / P
+- window counts
+- Table S1 values if retained.
+
+No silent numerical changes.
+
+======================================================================
+SUBMISSION PACKAGE
+======================================================================
+
+Produce a clean Human Genetics submission package.
+
+At minimum:
+
+1. HUMAN_GENETICS_MAIN_MANUSCRIPT.docx
+2. HUMAN_GENETICS_MAIN_MANUSCRIPT_inline_review.docx
+3. HUMAN_GENETICS_COVER_LETTER.docx
+4. HUMAN_GENETICS_TITLE_PAGE.docx
+5. HUMAN_GENETICS_SUPPORTING_INFORMATION.docx
+6. data archive / data documentation in the form required by the journal
+7. main figure files
+8. supplementary figure files if separately required
+9. tables if separately required
+10. HUMAN_GENETICS_REQUIREMENTS_AUDIT.md
+11. HUMAN_GENETICS_CITATION_ECOLOGY.md
+12. HUMAN_GENETICS_HOSTILE_REVIEW.md
+13. REFERENCE_AUDIT.md
+14. SUBMISSION_CHECKLIST_HUMAN_GENETICS.md
+15. FINAL_HANDOFF_HUMAN_GENETICS.md
+16. final ZIP:
+    HUMAN_GENETICS_SUBMISSION_FINAL.zip
+
+Also save the exact prompt used:
+DEVIN_HUMAN_GENETICS_RETARGET_PROMPT.txt
+
+======================================================================
+FINAL_HANDOFF_HUMAN_GENETICS.md MUST INCLUDE
+======================================================================
+
+A. final title
+
+B. article type selected
+
+C. exact journal-fit rationale
+
+D. major changes from the Heredity-targeted version
+
+E. explicit statement that analysis was frozen
+
+F. exact key numerical results
+
+G. closest prior studies and novelty boundary
+
+H. Human Genetics citation-ecology findings
+
+I. reference-style status
+
+J. figure/table/supplement inventory
+
+K. current journal requirement compliance
+
+L. publication route / fee note:
+state whether the traditional non-OA route is available under current journal policy
+
+M. unresolved local author-completion items
+
+N. exact upload-ready filenames
+
+O. final verdict:
+
+READY FOR HUMAN GENETICS SUBMISSION
+
+or
+
+NOT READY — with specific blocking reasons.
+
+======================================================================
+STOP CONDITION
+======================================================================
+
+Do not perform unnecessary iterative rewriting.
+
+This is a targeted journal retargeting exercise.
+
+Preserve the validated science.
+Preserve the structural-null contribution.
+Strengthen Human Genetics fit.
+Reduce unnecessary cross-species generalization.
+Improve citation ecology.
+Create a persuasive Human Genetics cover letter.
+Apply journal-specific formatting.
+Complete hostile review and final consistency audit.
+
+Stop only when the package is genuinely submission-ready or a concrete blocker remains.

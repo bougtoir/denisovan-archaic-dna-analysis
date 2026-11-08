@@ -1,0 +1,608 @@
+You are Devin operating in ONE SINGLE VM and ONE canonical working tree.
+
+PROJECT
+Hostile pre-submission review of the Human Genetics submission package.
+
+TARGET JOURNAL
+Human Genetics (Springer Nature)
+
+INPUT
+Use the latest Human Genetics submission package as the sole manuscript-package source of truth.
+
+Likely package filename:
+HUMAN_GENETICS_SUBMISSION_FINAL.zip
+
+The current manuscript is a human population-genetics / human evolutionary-genetics study centered on:
+
+- pairwise genomic similarity,
+- repeated-population non-independence,
+- a population-wide structural null,
+- Neanderthal and Denisovan archaic-segment sharing across 66 human populations,
+- QAP / population-label permutation,
+- pair-specific residual inference,
+- FDR control,
+- ABO as a focal worked example.
+
+PRIMARY GOAL
+Perform a genuinely adversarial, publication-oriented review intended to identify reasons a Human Genetics editor or reviewer might reject, desk-reject, or demand major revision.
+
+This is NOT a proofreading exercise.
+
+The review must actively try to falsify:
+- the novelty claim,
+- the inferential logic,
+- the biological interpretation,
+- the journal fit,
+- the statistical framing,
+- the reproducibility claims,
+- the presentation quality.
+
+Then implement only justified fixes that do NOT require opening a new scientific project.
+
+======================================================================
+CORE EXECUTION RULES
+======================================================================
+
+1. Work in ONE VM and ONE canonical working tree.
+2. Unpack and inspect the full submission package.
+3. Treat the current manuscript, supplement, data archive, tables, figures, and validated machine-readable outputs as the source of truth.
+4. Do NOT use older manuscript versions as authoritative.
+5. Do NOT add new datasets.
+6. Do NOT add new populations.
+7. Do NOT add new loci.
+8. Do NOT add exploratory subgroup analyses.
+9. Do NOT alter validated numerical results unless a concrete transcription inconsistency is discovered.
+10. Do NOT manufacture reviewer criticisms merely to appear rigorous.
+11. Every criticism must point to a specific sentence, claim, figure, table, method, citation, or omission.
+12. Every criticism must distinguish:
+    - scientific validity,
+    - statistical validity,
+    - biological interpretation,
+    - novelty,
+    - journal fit,
+    - reporting/formatting.
+13. If a criticism is already adequately addressed in the manuscript, mark it RESOLVED / NO ISSUE rather than reopening it.
+14. If a proposed fix would require new analysis, classify it explicitly as:
+    ANALYSIS-REQUIRING
+    and do NOT implement it automatically.
+15. Preserve the paper's current scientific identity:
+    a human population-genetics study with a dependence-aware structural-null framework.
+16. Keep ABO subordinate as a worked example.
+17. Do not convert "no excess similarity beyond structural expectation" into "no shared history."
+18. Do not claim QAP is novel.
+19. Do not claim population structure bias is newly discovered.
+20. Preserve exact P values where reported.
+
+======================================================================
+MANDATORY JOURNAL CHECK
+======================================================================
+
+Before reviewing the science, verify the CURRENT Human Genetics:
+
+- Aims and Scope
+- article types
+- Title Page requirements
+- Abstract/keyword requirements
+- manuscript section order
+- Statements and Declarations requirements
+- figure placement requirements
+- reference style
+- data availability requirements
+- AI/LLM disclosure requirements
+- supplementary material rules
+- submission file structure
+- publication model
+
+Use authoritative Springer Nature / Human Genetics sources only.
+
+Create:
+HUMAN_GENETICS_CURRENT_REQUIREMENTS_RECHECK.md
+
+Do not rely on old cached notes.
+
+======================================================================
+REVIEW PANEL
+======================================================================
+
+Run FOUR independent adversarial reviews.
+
+----------------------------------------------------------------------
+REVIEWER A — HUMAN GENETICS EDITOR / DESK-REJECT REVIEW
+----------------------------------------------------------------------
+
+Act as a selective Human Genetics editor deciding whether the paper should be sent for external review.
+
+Questions:
+
+1. Is this unmistakably a HUMAN GENETICS paper?
+2. Is the biological problem sufficiently important for Human Genetics?
+3. Does the manuscript go beyond descriptive population genetics?
+4. Does the inferential contribution materially improve interpretation of human genomic data?
+5. Is the novelty sufficiently clear in the title, abstract, first 2 pages, Figure 1, and cover letter?
+6. Is the manuscript too methodological for the journal?
+7. Is it too descriptive for the journal?
+8. Is archaic introgression a sufficiently central biological application?
+9. Does the negative result reduce editorial priority?
+10. Does the paper explain why a negative pair-level finding is scientifically useful?
+11. Are the closest prior studies acknowledged prominently enough?
+12. Would an editor plausibly say:
+    "interesting but better suited to a methods/statistics journal"?
+13. Would an editor plausibly say:
+    "interesting method but insufficient human-genetics advance"?
+14. Would an editor plausibly say:
+    "descriptive population structure already known"?
+15. Does the manuscript proactively answer those objections?
+
+OUTPUT:
+EDITORIAL_DESK_REVIEW.md
+
+Give:
+- Desk-reject risk: LOW / MODERATE / HIGH
+- Top 5 desk-reject vulnerabilities
+- Whether each is fixable without new analysis
+- A final SEND TO REVIEW / DESK REJECT verdict
+
+----------------------------------------------------------------------
+REVIEWER B — HUMAN POPULATION GENETICIST
+----------------------------------------------------------------------
+
+Act as a skeptical specialist in:
+- human population genetics,
+- archaic introgression,
+- demographic history,
+- population structure.
+
+Attack the manuscript on:
+
+1. Biological interpretation of Neanderthal and Denisovan segment sharing
+2. Whether correlation of segment-frequency profiles is biologically meaningful
+3. Whether similarity is conflated with shared descent
+4. Whether geography is overinterpreted
+5. Whether population labels and centroids are appropriate
+6. Whether source-panel heterogeneity could drive results
+7. Whether recently admixed populations are handled appropriately
+8. Whether archaic calls from different populations/panels are comparable
+9. Whether sparse Denisovan signal outside Oceania undermines inference
+10. Whether "structural expectation" is biologically too coarse
+11. Whether absence of residual outliers is merely low power
+12. Whether the z>2 + q<0.10 rule is arbitrary
+13. Whether the paper adequately distinguishes:
+    - identity by state,
+    - identity by descent,
+    - shared introgression,
+    - demographic similarity
+14. Whether ABO is scientifically justified as a worked example
+15. Whether ABO risks appearing post hoc
+16. Whether ancient and present-day ABO comparisons are properly separated
+17. Whether Indigenous population interpretation is sufficiently cautious
+18. Whether route-specific claims are truly absent
+19. Whether the negative result is biologically informative rather than trivial
+20. Whether the study changes human population-genetic interpretation in a meaningful way
+
+OUTPUT:
+HOSTILE_REVIEW_POPULATION_GENETICS.md
+
+For every issue:
+- quote or identify exact manuscript location,
+- explain why a reviewer might object,
+- rate severity,
+- propose the minimum fix.
+
+----------------------------------------------------------------------
+REVIEWER C — STATISTICAL GENETICIST / METHODS REVIEW
+----------------------------------------------------------------------
+
+Act as a skeptical statistical geneticist.
+
+Attack:
+
+1. Exact estimand
+2. Unit of analysis
+3. Non-independence structure
+4. Why ordinary pairwise inference is invalid
+5. Why QAP is appropriate
+6. What QAP does and does not guarantee
+7. Whether the response permutation scheme is correct
+8. Whether the same permutation should support:
+    - coefficient inference,
+    - pair-level residual inference
+9. Whether pair-specific residual P values are well-defined
+10. Whether BH FDR is defensible under dependence
+11. Whether the manuscript overstates dependence-aware FDR validity
+12. Whether "stricter procedures would only strengthen absence of findings" is logically/statistically safe
+13. Whether population deletion intervals are correctly described
+14. Whether partial correlations and regression coefficients are clearly distinguished
+15. Whether R-squared is overinterpreted
+16. Whether same-continent / same-dataset / admixture indicators are too crude
+17. Whether the distance model is misspecified
+18. Whether linearity is assumed inappropriately
+19. Whether Pearson correlation across non-zero union windows induces bias
+20. Whether alternative metrics adequately address that issue
+21. Whether unequal population sample sizes distort profile frequencies
+22. Whether finite sampling uncertainty in population frequencies is ignored
+23. Whether the pair-level residual z score properly incorporates uncertainty
+24. Whether the ABO focal-window genome-wide comparison is statistically coherent
+25. Whether its residual sign is correct
+26. Whether the empirical P value is correctly defined
+27. Whether multiple testing is applied at the appropriate family level
+28. Whether "structural null" is a valid term or risks overstating the model
+29. Whether the method is merely an application of MRQAP rather than a scientific contribution
+30. Whether any statistical claim exceeds what the procedure establishes
+
+OUTPUT:
+HOSTILE_REVIEW_STATISTICAL_GENETICS.md
+
+For every criticism:
+- exact location,
+- mathematical/statistical concern,
+- severity,
+- whether it is:
+  TEXT-FIXABLE
+  ANALYSIS-REQUIRING
+  FUNDAMENTAL
+
+Do NOT rerun new analyses unless a transcription bug is discovered.
+
+----------------------------------------------------------------------
+REVIEWER D — NOVELTY / CITATION ECOLOGY / PRIOR ART
+----------------------------------------------------------------------
+
+Act as a hostile literature reviewer.
+
+Reassess the closest prior studies from scratch.
+
+At minimum inspect:
+- Mazet et al.
+- Tournebize & Chikhi
+- Ortega-Del Vecchyo & Slatkin
+- relevant MRQAP / Mantel literature
+- relevant archaic introgression studies
+- recent Human Genetics papers in population/evolutionary genetics
+- any study directly testing exceptional pairwise genomic similarity against structured null expectations.
+
+Create a table of 5-10 closest prior studies.
+
+For each:
+- research question
+- data
+- method
+- estimand
+- result
+- overlap with current paper
+- exact residual novelty
+
+Then answer:
+
+1. Is "structural null for pairwise genomic similarity" genuinely new as framing?
+2. Has essentially the same workflow already been published?
+3. Is the manuscript's novelty mainly:
+   - method,
+   - workflow,
+   - inferential framing,
+   - application,
+   - biological result?
+4. Is the manuscript honest about that level of novelty?
+5. Are there any missing citations that a reviewer would almost certainly demand?
+6. Does Human Genetics have a direct bibliographic neighborhood for this paper?
+7. Is any citation included mainly for journal gaming rather than substance?
+8. Is any Human Genetics paper cited without directly supporting a claim?
+9. Does the cover letter overstate novelty relative to the literature?
+
+OUTPUT:
+HOSTILE_REVIEW_NOVELTY_AND_CITATION.md
+
+If direct prior art substantially collapses the novelty:
+classify as BLOCKING and explain exactly why.
+
+======================================================================
+SEVERITY SCALE
+======================================================================
+
+Every issue must be assigned exactly one:
+
+BLOCKING
+Likely to cause desk rejection, scientific invalidity, or a major misleading claim.
+
+MAJOR
+Could plausibly trigger major revision or rejection but is fixable without redesigning the study.
+
+MINOR
+Should be corrected but would not determine editorial outcome.
+
+NO ISSUE
+Explicitly considered and found adequately handled.
+
+ANALYSIS-REQUIRING
+Potentially important, but cannot be fixed honestly without new analysis.
+
+Do not inflate MINOR issues into MAJOR.
+
+======================================================================
+MANDATORY CLAIM CALIBRATION REVIEW
+======================================================================
+
+Search the entire manuscript for claims involving:
+
+- exceptional
+- special
+- connection
+- migration
+- route
+- gene flow
+- shared history
+- structural null
+- null expectation
+- residual
+- outlier
+- independence
+- causal
+- prediction
+- explains
+- accounted for
+- supports
+- disproves
+- absence
+- no evidence
+- robust
+- general
+- transferable
+- across species
+
+For each high-risk claim, determine whether the data support:
+
+A. descriptive statement
+B. inferential statement under the specified null
+C. broader historical/causal statement
+
+Downgrade wording where necessary.
+
+Create:
+CLAIM_CALIBRATION_AUDIT_HUMAN_GENETICS.md
+
+======================================================================
+MANDATORY NEGATIVE-RESULT REVIEW
+======================================================================
+
+Because the main pair-specific result is negative, explicitly test whether the manuscript adequately answers:
+
+1. Why is zero supported pair scientifically informative?
+2. Could this simply be low power?
+3. Is the threshold too conservative?
+4. Are the largest residuals informative?
+5. Does the paper quantify an upper bound or practical ceiling?
+6. Is "no supported excess" distinguished from "no effect"?
+7. Does the Discussion acknowledge modest pair-specific effects could be missed?
+8. Is the negative result connected to the methodological message strongly enough?
+
+If not, improve wording WITHOUT new analysis.
+
+Create:
+NEGATIVE_RESULT_INTERPRETATION_AUDIT.md
+
+======================================================================
+FIGURE / TABLE HOSTILE REVIEW
+======================================================================
+
+Inspect every main figure and table visually.
+
+For each ask:
+
+1. Can a reader understand it without the manuscript?
+2. Does the figure visually support the stated claim?
+3. Is any axis misleading?
+4. Are thresholds visually clear?
+5. Are labels legible?
+6. Are color choices necessary / interpretable?
+7. Does Figure 1 oversimplify QAP?
+8. Does Figure 3 visually imply clustering stronger than formally tested?
+9. Does Figure 4 make "no significant pair" obvious without visually exaggerating nullity?
+10. Does Figure 5 imply independent confirmatory tests when they are sensitivities?
+11. Does Table 1 containing "no qualifying pair" add value or look awkward?
+12. Should Table 1 remain, be simplified, or be described differently?
+
+Do not redesign figures unless a genuine communication problem exists.
+
+Create:
+FIGURE_TABLE_HOSTILE_REVIEW.md
+
+======================================================================
+SUBMISSION-FORMAT REVIEW
+======================================================================
+
+Check the actual Human Genetics submission files.
+
+Specifically verify:
+
+1. Title Page contains all current required elements.
+2. Abstract length and keyword count comply.
+3. ORCID placement complies.
+4. Acknowledgements placement complies.
+5. References placement complies.
+6. "Statements and Declarations" heading exists if required.
+7. Statements and Declarations are located where required.
+8. Funding / Competing Interests / Author Contributions / Ethics / Data Availability are positioned correctly.
+9. AI disclosure is present in the appropriate place if required.
+10. Main figures are embedded in the manuscript if current journal rules require in-text figure placement.
+11. Figure 1 is not accidentally missing from the inline manuscript.
+12. All figures are cited in order.
+13. All tables are cited in order.
+14. Supplementary figures and tables are cited in order.
+15. Reference format matches current Human Genetics style.
+16. The cover letter is addressed generically/appropriately and contains no stale Heredity references.
+17. No HDY manuscript number remains.
+18. No "Heredity" journal-target language remains in the manuscript package.
+19. No obsolete file names remain.
+20. All upload-ready files are unambiguous.
+
+Create:
+HUMAN_GENETICS_SUBMISSION_FORMAT_AUDIT.md
+
+======================================================================
+COVER LETTER HOSTILE REVIEW
+======================================================================
+
+Review the cover letter as if you were the handling editor.
+
+Check:
+
+- Does the first paragraph communicate importance immediately?
+- Is novelty clear within 150 words?
+- Is journal fit specific rather than generic?
+- Does the letter explain why the negative result matters?
+- Does it overclaim generality?
+- Does it overclaim method novelty?
+- Does it use first person singular consistently?
+- Does it contain stale Heredity language?
+- Does it mention prior rejection unnecessarily?
+- Does it clearly distinguish:
+  "similar pair"
+  from
+  "exceptional relative to population structure"?
+
+If needed, rewrite the cover letter.
+
+Cover-letter heat:
+HIGH (~80%)
+but never hype.
+
+======================================================================
+SYNTHESIS GATE
+======================================================================
+
+After completing all four reviews, create:
+
+HUMAN_GENETICS_HOSTILE_REVIEW_SYNTHESIS.md
+
+Include a table:
+
+Issue | Reviewer | Severity | Manuscript location | Fix | New analysis needed? | Status
+
+Then rank:
+
+TOP 5 REJECTION RISKS
+
+For each risk:
+- probability,
+- consequence,
+- whether manuscript already mitigates it,
+- exact residual vulnerability.
+
+Also include:
+
+WHAT THE PAPER ACTUALLY CONTRIBUTES
+
+in no more than 5 bullet points.
+
+And:
+
+WHAT THE PAPER DOES NOT CLAIM
+
+in no more than 5 bullet points.
+
+======================================================================
+FIXING RULES
+======================================================================
+
+After hostile review:
+
+AUTO-FIX:
+- all BLOCKING issues fixable by text/formatting;
+- all MAJOR issues fixable by text/formatting;
+- genuine reference omissions;
+- inaccurate or overstated claims;
+- formatting noncompliance;
+- title-page / declarations / figure-placement problems;
+- cover-letter weaknesses.
+
+DO NOT AUTO-FIX:
+- issues requiring new datasets;
+- new population-genetic analyses;
+- new simulation studies;
+- new external validation;
+- new locus scans;
+- new statistical procedures;
+- new sample collection.
+
+For ANALYSIS-REQUIRING issues:
+document them honestly and decide whether they are:
+- necessary for publication,
+- useful but nonessential,
+- inappropriate scope expansion.
+
+======================================================================
+FINAL REBUILD
+======================================================================
+
+If fixes are made, regenerate:
+
+1. HUMAN_GENETICS_MAIN_MANUSCRIPT_FINAL.docx
+2. HUMAN_GENETICS_MAIN_MANUSCRIPT_FINAL_inline.docx
+3. HUMAN_GENETICS_TITLE_PAGE_FINAL.docx
+4. HUMAN_GENETICS_COVER_LETTER_FINAL.docx
+5. HUMAN_GENETICS_SUPPORTING_INFORMATION_FINAL.docx
+6. any corrected submission metadata docs
+7. final reference validation
+8. final submission checklist
+9. HUMAN_GENETICS_SUBMISSION_HOSTILE_REVIEWED_FINAL.zip
+
+Do NOT regenerate figures if unchanged.
+
+======================================================================
+FINAL HANDOFF
+======================================================================
+
+Create:
+FINAL_HANDOFF_AFTER_HOSTILE_REVIEW.md
+
+It must state:
+
+1. Final verdict:
+   - READY FOR SUBMISSION
+   - READY WITH MINOR LOCAL COMPLETION
+   - NOT READY
+
+2. Desk-reject risk:
+   LOW / MODERATE / HIGH
+
+3. Top 5 residual risks
+
+4. All BLOCKING issues found and resolution
+
+5. All MAJOR issues found and resolution
+
+6. All ANALYSIS-REQUIRING issues and whether they are publication-blocking
+
+7. Confirmation that analysis remained frozen
+
+8. Confirmation that key numbers are unchanged
+
+9. Final novelty statement
+
+10. Final Human Genetics fit statement
+
+11. Final file list
+
+12. Any items the author must complete locally
+
+======================================================================
+STOP CONDITION
+======================================================================
+
+Do not stop after writing review memos.
+
+Complete:
+- current journal requirement recheck,
+- 4 independent hostile reviews,
+- claim-calibration audit,
+- negative-result audit,
+- figure/table audit,
+- submission-format audit,
+- cover-letter audit,
+- synthesis,
+- all justified text/format fixes,
+- final package rebuild,
+- final handoff.
+
+Stop only when the manuscript is genuinely ready for Human Genetics submission OR when a concrete scientific blocker remains.
+
+The purpose of this exercise is to maximize the chance that a skeptical Human Genetics editor sends the paper to external review without weakening scientific honesty or opening an unnecessary new research project.

@@ -1,0 +1,625 @@
+{
+ "Wright 1943": {
+  "doi": "10.1093/genetics/28.2.114",
+  "file": "data/raw/reference_metadata/10_1093_genetics_28_2_114.json",
+  "sha256": "a14014f984601429d92b8173d12f1bccc0e3833b3a0138eb3da89f5f5f93773f",
+  "retrieved_utc": "2026-11-08T03:45:00.379090Z",
+  "container": [
+   "Genetics"
+  ],
+  "short": [],
+  "year": 1943,
+  "vol": "28",
+  "issue": "2",
+  "page": "114-138",
+  "title": [
+   "ISOLATION BY DISTANCE"
+  ],
+  "nauth": 1,
+  "a1": "Wright"
+ },
+ "Rousset 1997": {
+  "doi": "10.1093/genetics/145.4.1219",
+  "file": "data/raw/reference_metadata/10_1093_genetics_145_4_1219.json",
+  "sha256": "d225e55f07e56f55b91c438ffb68cc5292bdf94abc74a0eb9cfbeff1170c53ad",
+  "retrieved_utc": "2026-11-08T03:45:00.889516Z",
+  "container": [
+   "Genetics"
+  ],
+  "short": [],
+  "year": 1997,
+  "vol": "145",
+  "issue": "4",
+  "page": "1219-1228",
+  "title": [
+   "Genetic Differentiation and Estimation of Gene Flow from\n                    <i>F</i>\n                    -Statistics Under Isolation by Distance"
+  ],
+  "nauth": 1,
+  "a1": "Rousset"
+ },
+ "1000 Genomes Project Consortium 2015": {
+  "doi": "10.1038/nature15393",
+  "file": "data/raw/reference_metadata/10_1038_nature15393.json",
+  "sha256": "cd09cfce0960a0e673bb5944b693f5ebb7ad9744750df6c83c76b47772c527ac",
+  "retrieved_utc": "2026-11-08T03:45:01.602093Z",
+  "container": [
+   "Nature"
+  ],
+  "short": [
+   "Nature"
+  ],
+  "year": 2015,
+  "vol": "526",
+  "issue": "7571",
+  "page": "68-74",
+  "title": [
+   "A global reference for human genetic variation"
+  ],
+  "nauth": 945,
+  "a1": null
+ },
+ "Bergström et al. 2020": {
+  "doi": "10.1126/science.aay5012",
+  "file": "data/raw/reference_metadata/10_1126_science_aay5012.json",
+  "sha256": "324a45fdb3fb1f0d4f388698d1db773f76d7cf9ad56442a1bc05545dfc787788",
+  "retrieved_utc": "2026-11-08T03:45:02.192063Z",
+  "container": [
+   "Science"
+  ],
+  "short": [
+   "Science"
+  ],
+  "year": 2020,
+  "vol": "367",
+  "issue": "6484",
+  "page": "eaay5012",
+  "title": [
+   "Insights into human genetic variation and population history from 929 diverse genomes"
+  ],
+  "nauth": 21,
+  "a1": "Bergström"
+ },
+ "Sankararaman et al. 2014": {
+  "doi": "10.1038/nature12961",
+  "file": "data/raw/reference_metadata/10_1038_nature12961.json",
+  "sha256": "11355469567d4c10d7f4dc72cc93cd71b693bf9bbfe8c62dfd8c1d74949fc7e9",
+  "retrieved_utc": "2026-11-08T03:45:02.822686Z",
+  "container": [
+   "Nature"
+  ],
+  "short": [
+   "Nature"
+  ],
+  "year": 2014,
+  "vol": "507",
+  "issue": "7492",
+  "page": "354-357",
+  "title": [
+   "The genomic landscape of Neanderthal ancestry in present-day humans"
+  ],
+  "nauth": 8,
+  "a1": "Sankararaman"
+ },
+ "Sankararaman et al. 2016": {
+  "doi": "10.1016/j.cub.2016.03.037",
+  "file": "data/raw/reference_metadata/10_1016_j_cub_2016_03_037.json",
+  "sha256": "75bcb5f82e0e4aa5743e16df7be29c68d9fc2b3dc58db95e7caa373d40d2e1cb",
+  "retrieved_utc": "2026-11-08T03:45:03.350401Z",
+  "container": [
+   "Current Biology"
+  ],
+  "short": [
+   "Current Biology"
+  ],
+  "year": 2016,
+  "vol": "26",
+  "issue": "9",
+  "page": "1241-1247",
+  "title": [
+   "The Combined Landscape of Denisovan and Neanderthal Ancestry in Present-Day Humans"
+  ],
+  "nauth": 4,
+  "a1": "Sankararaman"
+ },
+ "Mantel 1967": null,
+ "Krackhardt 1988": {
+  "doi": "10.1016/0378-8733(88)90004-4",
+  "file": "data/raw/reference_metadata/10_1016_0378_8733_88_90004_4.json",
+  "sha256": "231e62f1f5b21bd9ff1f6e8d85ee7ad6063da02f553d7140b6f470043627ff5d",
+  "retrieved_utc": "2026-11-08T03:45:03.847424Z",
+  "container": [
+   "Social Networks"
+  ],
+  "short": [
+   "Social Networks"
+  ],
+  "year": 1988,
+  "vol": "10",
+  "issue": "4",
+  "page": "359-381",
+  "title": [
+   "Predicting with networks: Nonparametric multiple regression analysis of dyadic data"
+  ],
+  "nauth": 1,
+  "a1": "Krackhardt"
+ },
+ "Dekker, Krackhardt, and Snijders 2007": {
+  "doi": "10.1007/s11336-007-9016-1",
+  "file": "data/raw/reference_metadata/10_1007_s11336_007_9016_1.json",
+  "sha256": "8610e709e5e449e7105ac345cbc6ad6310cd2eb5d70920e3f72854ae9abebf52",
+  "retrieved_utc": "2026-11-08T03:45:04.343672Z",
+  "container": [
+   "Psychometrika"
+  ],
+  "short": [
+   "Psychometrika"
+  ],
+  "year": 2007,
+  "vol": "72",
+  "issue": "4",
+  "page": "563-581",
+  "title": [
+   "Sensitivity of MRQAP Tests to Collinearity and Autocorrelation Conditions"
+  ],
+  "nauth": 3,
+  "a1": "Dekker"
+ },
+ "Legendre and Fortin 2010": {
+  "doi": "10.1111/j.1755-0998.2010.02866.x",
+  "file": "data/raw/reference_metadata/10_1111_j_1755_0998_2010_02866_x.json",
+  "sha256": "8d03a37c6fcb67741d7d2ca6a53ba5bb37d07a46e815cd1b8d61eb7600bb2c91",
+  "retrieved_utc": "2026-11-08T03:45:04.853802Z",
+  "container": [
+   "Molecular Ecology Resources"
+  ],
+  "short": [
+   "Molecular Ecology Resources"
+  ],
+  "year": 2010,
+  "vol": "10",
+  "issue": "5",
+  "page": "831-844",
+  "title": [
+   "Comparison of the Mantel test and alternative approaches for detecting complex multivariate relationships in the spatial analysis of genetic data"
+  ],
+  "nauth": 2,
+  "a1": "LEGENDRE"
+ },
+ "Guillot and Rousset 2013": {
+  "doi": "10.1111/2041-210x.12018",
+  "file": "data/raw/reference_metadata/10_1111_2041_210x_12018.json",
+  "sha256": "312e5d1b1ed4510bdd0265a13cd030b6146adeb82656b32bc0245be9349946fb",
+  "retrieved_utc": "2026-11-08T03:45:05.358987Z",
+  "container": [
+   "Methods in Ecology and Evolution"
+  ],
+  "short": [
+   "Methods Ecol Evol"
+  ],
+  "year": 2013,
+  "vol": "4",
+  "issue": "4",
+  "page": "336-344",
+  "title": [
+   "Dismantling the Mantel tests"
+  ],
+  "nauth": 2,
+  "a1": "Guillot"
+ },
+ "Mazet et al. 2016": {
+  "doi": "10.1038/hdy.2015.104",
+  "file": "data/raw/reference_metadata/10_1038_hdy_2015_104.json",
+  "sha256": "8aa5bdc765c95addcc7d983ef90e7c5359c1515e21e08cedcd6da9ec1a628a91",
+  "retrieved_utc": "2026-11-08T03:45:05.933625Z",
+  "container": [
+   "Heredity"
+  ],
+  "short": [
+   "Heredity"
+  ],
+  "year": 2016,
+  "vol": "116",
+  "issue": "4",
+  "page": "362-371",
+  "title": [
+   "On the importance of being structured: instantaneous coalescence rates and human evolution—lessons for ancestral population size inference?"
+  ],
+  "nauth": 5,
+  "a1": "Mazet"
+ },
+ "Tournebize and Chikhi 2025": {
+  "doi": "10.1038/s41559-024-02591-6",
+  "file": "data/raw/reference_metadata/10_1038_s41559_024_02591_6.json",
+  "sha256": "808a0b9acb630b817b953bfc43b45aa88f0e7e50c3cfa4064aaf600b6b7510ad",
+  "retrieved_utc": "2026-11-08T03:45:06.515683Z",
+  "container": [
+   "Nature Ecology &amp; Evolution"
+  ],
+  "short": [
+   "Nat Ecol Evol"
+  ],
+  "year": 2024,
+  "vol": "9",
+  "issue": "2",
+  "page": "225-236",
+  "title": [
+   "Ignoring population structure in hominin evolutionary models can lead to the inference of spurious admixture events"
+  ],
+  "nauth": 2,
+  "a1": "Tournebize"
+ },
+ "Lawson et al. 2020": {
+  "doi": "10.1007/s00439-019-02014-8",
+  "file": "data/raw/reference_metadata/10_1007_s00439_019_02014_8.json",
+  "sha256": "a2a26258b320fcafaa228eb420e10c711aebbcac7925a84d23065cb7c6c50482",
+  "retrieved_utc": "2026-11-08T03:45:07.131015Z",
+  "container": [
+   "Human Genetics"
+  ],
+  "short": [
+   "Hum Genet"
+  ],
+  "year": 2020,
+  "vol": "139",
+  "issue": "1",
+  "page": "23-41",
+  "title": [
+   "Is population structure in the genetic biobank era irrelevant, a challenge, or an opportunity?"
+  ],
+  "nauth": 9,
+  "a1": "Lawson"
+ },
+ "Ortega-Del Vecchyo and Slatkin 2019": {
+  "doi": "10.1038/s41437-018-0169-8",
+  "file": "data/raw/reference_metadata/10_1038_s41437_018_0169_8.json",
+  "sha256": "09df3b8d12c9fbe45e21ca3bd4eab596b647fe78a1f19abef7640a67ba7c106c",
+  "retrieved_utc": "2026-11-08T03:45:07.641114Z",
+  "container": [
+   "Heredity"
+  ],
+  "short": [
+   "Heredity"
+  ],
+  "year": 2019,
+  "vol": "122",
+  "issue": "6",
+  "page": "711-718",
+  "title": [
+   "FST between archaic and present-day samples"
+  ],
+  "nauth": 2,
+  "a1": "Ortega-Del Vecchyo"
+ },
+ "Green et al. 2010": {
+  "doi": "10.1126/science.1188021",
+  "file": "data/raw/reference_metadata/10_1126_science_1188021.json",
+  "sha256": "69be656c24a68d4f2e825c8bcc5727145e4385d40cd58e488ffa15495b40b80e",
+  "retrieved_utc": "2026-11-08T03:45:08.190578Z",
+  "container": [
+   "Science"
+  ],
+  "short": [
+   "Science"
+  ],
+  "year": 2010,
+  "vol": "328",
+  "issue": "5979",
+  "page": "710-722",
+  "title": [
+   "A Draft Sequence of the Neandertal Genome"
+  ],
+  "nauth": 56,
+  "a1": "Green"
+ },
+ "Reich et al. 2010": {
+  "doi": "10.1038/nature09710",
+  "file": "data/raw/reference_metadata/10_1038_nature09710.json",
+  "sha256": "e67a0daebc2db42830b0964c4f7411836e70848cf12d437ab5ab533d26cd1943",
+  "retrieved_utc": "2026-11-08T03:45:08.764178Z",
+  "container": [
+   "Nature"
+  ],
+  "short": [
+   "Nature"
+  ],
+  "year": 2010,
+  "vol": "468",
+  "issue": "7327",
+  "page": "1053-1060",
+  "title": [
+   "Genetic history of an archaic hominin group from Denisova Cave in Siberia"
+  ],
+  "nauth": 28,
+  "a1": "Reich"
+ },
+ "Jacobs et al. 2019": {
+  "doi": "10.1016/j.cell.2019.02.035",
+  "file": "data/raw/reference_metadata/10_1016_j_cell_2019_02_035.json",
+  "sha256": "873c6d7e712e238e351792d0dabffac6a96e7ec21f5b476548826f076170ac0a",
+  "retrieved_utc": "2026-11-08T03:45:09.344728Z",
+  "container": [
+   "Cell"
+  ],
+  "short": [
+   "Cell"
+  ],
+  "year": 2019,
+  "vol": "177",
+  "issue": "4",
+  "page": "1010-1021.e32",
+  "title": [
+   "Multiple Deeply Divergent Denisovan Ancestries in Papuans"
+  ],
+  "nauth": 14,
+  "a1": "Jacobs"
+ },
+ "Calafell et al. 2008": {
+  "doi": "10.1007/s00439-008-0530-8",
+  "file": "data/raw/reference_metadata/10_1007_s00439_008_0530_8.json",
+  "sha256": "857dd5e3843aaf5e119838cc055f49e78c1b2fe98e27630ed3c4276b2184bcb8",
+  "retrieved_utc": "2026-11-08T03:45:09.921923Z",
+  "container": [
+   "Human Genetics"
+  ],
+  "short": [
+   "Hum Genet"
+  ],
+  "year": 2008,
+  "vol": "124",
+  "issue": "2",
+  "page": "123-135",
+  "title": [
+   "Evolutionary dynamics of the human ABO gene"
+  ],
+  "nauth": 6,
+  "a1": "Calafell"
+ },
+ "Condemi et al. 2021": {
+  "doi": "10.1371/journal.pone.0254175",
+  "file": "data/raw/reference_metadata/10_1371_journal_pone_0254175.json",
+  "sha256": "4bcc7214fd2c3afbb494367ebf22534a92c24552bc23b6dffe73f08a4a95bfee",
+  "retrieved_utc": "2026-11-08T03:45:10.484049Z",
+  "container": [
+   "PLOS ONE"
+  ],
+  "short": [
+   "PLoS ONE"
+  ],
+  "year": 2021,
+  "vol": "16",
+  "issue": "7",
+  "page": "e0254175",
+  "title": [
+   "Blood groups of Neandertals and Denisova decrypted"
+  ],
+  "nauth": 7,
+  "a1": "Condemi"
+ },
+ "Halverson and Bolnick 2008": {
+  "doi": "10.1002/ajpa.20887",
+  "file": "data/raw/reference_metadata/10_1002_ajpa_20887.json",
+  "sha256": "fa16138846b04e07ff8e7666284d66213b7f27bd1ece7ed8e1834e6197a57f7f",
+  "retrieved_utc": "2026-11-08T03:45:11.015528Z",
+  "container": [
+   "American Journal of Physical Anthropology"
+  ],
+  "short": [
+   "American J Phys Anthropol"
+  ],
+  "year": 2008,
+  "vol": "137",
+  "issue": "3",
+  "page": "342-347",
+  "title": [
+   "An ancient DNA test of a founder effect in Native American ABO blood group frequencies"
+  ],
+  "nauth": 2,
+  "a1": "Halverson"
+ },
+ "Segurel et al. 2012": {
+  "doi": "10.1073/pnas.1210603109",
+  "file": "data/raw/reference_metadata/10_1073_pnas_1210603109.json",
+  "sha256": "55f12a77b9ba3f364174f011eaf425ca5778b8b7bdbdda129f40979e88419a05",
+  "retrieved_utc": "2026-11-08T03:45:11.606563Z",
+  "container": [
+   "Proceedings of the National Academy of Sciences"
+  ],
+  "short": [
+   "Proc. Natl. Acad. Sci. U.S.A."
+  ],
+  "year": 2012,
+  "vol": "109",
+  "issue": "45",
+  "page": "18493-18498",
+  "title": [
+   "The ABO blood group is a trans-species polymorphism in primates"
+  ],
+  "nauth": 12,
+  "a1": "Ségurel"
+ },
+ "Skov et al. 2018": {
+  "doi": "10.1371/journal.pgen.1007641",
+  "file": "data/raw/reference_metadata/10_1371_journal_pgen_1007641.json",
+  "sha256": "d81462df20c1c69c02a271fe686231e3e53ef1879baf03d93760644234754605",
+  "retrieved_utc": "2026-11-08T03:45:12.155455Z",
+  "container": [
+   "PLOS Genetics"
+  ],
+  "short": [
+   "PLoS Genet"
+  ],
+  "year": 2018,
+  "vol": "14",
+  "issue": "9",
+  "page": "e1007641",
+  "title": [
+   "Detecting archaic introgression using an unadmixed outgroup"
+  ],
+  "nauth": 7,
+  "a1": "Skov"
+ },
+ "Benjamini and Hochberg 1995": {
+  "doi": "10.1111/j.2517-6161.1995.tb02031.x",
+  "file": "data/raw/reference_metadata/10_1111_j_2517_6161_1995_tb02031_x.json",
+  "sha256": "80449db3ee3da6465a102ab0e1153123af7d593e25a99679a940c505f757ead3",
+  "retrieved_utc": "2026-11-08T03:45:12.664038Z",
+  "container": [
+   "Journal of the Royal Statistical Society Series B: Statistical Methodology"
+  ],
+  "short": [],
+  "year": 1995,
+  "vol": "57",
+  "issue": "1",
+  "page": "289-300",
+  "title": [
+   "Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing"
+  ],
+  "nauth": 2,
+  "a1": "Benjamini"
+ },
+ "Iasi et al. 2024": {
+  "doi": "10.1126/science.adq3010",
+  "file": "data/raw/reference_metadata/10_1126_science_adq3010.json",
+  "sha256": "1df7e6bbe6a79088784d684df68fb135e7c2fe16b32ecb17ea949030c98e3529",
+  "retrieved_utc": "2026-11-08T03:45:13.209617Z",
+  "container": [
+   "Science"
+  ],
+  "short": [
+   "Science"
+  ],
+  "year": 2024,
+  "vol": "386",
+  "issue": "6727",
+  "page": "eadq3010",
+  "title": [
+   "Neanderthal ancestry through time: Insights from genomes of ancient and present-day humans"
+  ],
+  "nauth": 7,
+  "a1": "Iasi"
+ },
+ "Prüfer et al. 2017": {
+  "doi": "10.1126/science.aao1887",
+  "file": "data/raw/reference_metadata/10_1126_science_aao1887.json",
+  "sha256": "49ebae1a9d79ec9f8af6edcfaba1309d598ce72ca17065b39707aced4c02724b",
+  "retrieved_utc": "2026-11-08T03:45:13.773598Z",
+  "container": [
+   "Science"
+  ],
+  "short": [
+   "Science"
+  ],
+  "year": 2017,
+  "vol": "358",
+  "issue": "6363",
+  "page": "655-658",
+  "title": [
+   "A high-coverage Neandertal genome from Vindija Cave in Croatia"
+  ],
+  "nauth": 36,
+  "a1": "Prüfer"
+ },
+ "Ohashi et al. 2006": {
+  "doi": "10.1007/s10038-006-0375-8",
+  "file": "data/raw/reference_metadata/10_1007_s10038_006_0375_8.json",
+  "sha256": "92f3c3e4627b46b1cd5b9da3416a66ece5cf7fd11bc5f36d4a644507acd1bb1f",
+  "retrieved_utc": "2026-11-08T03:45:14.291114Z",
+  "container": [
+   "Journal of Human Genetics"
+  ],
+  "short": [
+   "J Hum Genet"
+  ],
+  "year": 2006,
+  "vol": "51",
+  "issue": "5",
+  "page": "407-411",
+  "title": [
+   "Polymorphisms in the ABO blood group gene in three populations in the New Georgia group of the Solomon Islands"
+  ],
+  "nauth": 11,
+  "a1": "Ohashi"
+ },
+ "Claw et al. 2018": {
+  "doi": "10.1038/s41467-018-05188-3",
+  "file": "data/raw/reference_metadata/10_1038_s41467_018_05188_3.json",
+  "sha256": "87900d7e4d98ca310702d8df97d158ea842edcdff734f023e16aa7e7a17e16a4",
+  "retrieved_utc": "2026-11-08T03:45:14.868960Z",
+  "container": [
+   "Nature Communications"
+  ],
+  "short": [
+   "Nat Commun"
+  ],
+  "year": 2018,
+  "vol": "9",
+  "issue": "1",
+  "page": "2957",
+  "title": [
+   "A framework for enhancing ethical genomic research with Indigenous communities"
+  ],
+  "nauth": 20,
+  "a1": "Claw"
+ },
+ "Carroll et al. 2020": {
+  "doi": "10.5334/dsj-2020-043",
+  "file": "data/raw/reference_metadata/10_5334_dsj_2020_043.json",
+  "sha256": "f519511a6f7ceead56b5a9b0ff08970428eb35e3caeb83d95ce47adb927b7d3d",
+  "retrieved_utc": "2026-11-08T03:45:15.451799Z",
+  "container": [
+   "Data Science Journal"
+  ],
+  "short": [],
+  "year": 2020,
+  "vol": "19",
+  "issue": null,
+  "page": "43",
+  "title": [
+   "The CARE Principles for Indigenous Data Governance"
+  ],
+  "nauth": 14,
+  "a1": "Carroll"
+ },
+ "Quilodran et al. 2023": {
+  "doi": "10.1126/sciadv.adg9817",
+  "file": "data/raw/reference_metadata/10_1126_sciadv_adg9817.json",
+  "sha256": "874e572006f4b77d4447428f3bd9decd8843b8ddd66de32532c422949f9ba26a",
+  "retrieved_utc": "2026-11-08T03:45:15.957678Z",
+  "container": [
+   "Science Advances"
+  ],
+  "short": [
+   "Sci. Adv."
+  ],
+  "year": 2023,
+  "vol": "9",
+  "issue": "42",
+  "page": "eadg9817",
+  "title": [
+   "Past human expansions shaped the spatial pattern of Neanderthal ancestry"
+  ],
+  "nauth": 4,
+  "a1": "Quilodrán"
+ },
+ "Petr et al. 2019": {
+  "doi": "10.1073/pnas.1814338116",
+  "file": "data/raw/reference_metadata/10_1073_pnas_1814338116.json",
+  "sha256": "6e9232e05840cb0a2856f0ebb1f7ceeb138432ee9d536f21e446723a229706ee",
+  "retrieved_utc": "2026-11-08T03:45:16.463833Z",
+  "container": [
+   "Proceedings of the National Academy of Sciences"
+  ],
+  "short": [
+   "Proc. Natl. Acad. Sci. U.S.A."
+  ],
+  "year": 2019,
+  "vol": "116",
+  "issue": "5",
+  "page": "1639-1644",
+  "title": [
+   "Limits of long-term selection against Neandertal introgression"
+  ],
+  "nauth": 4,
+  "a1": "Petr"
+ }
+}

@@ -1,0 +1,34 @@
+reference,doi,status,note
+1000 Genomes Project Consortium 2015,10.1038/nature15393,VERIFIED,verified by DOI
+Benjamini and Hochberg 1995,10.1111/j.2517-6161.1995.tb02031.x,VERIFIED,verified by DOI
+Bergström et al. 2020,10.1126/science.aay5012,VERIFIED,verified by DOI
+Calafell et al. 2008,10.1007/s00439-008-0530-8,VERIFIED,verified by DOI
+Carroll et al. 2020,10.5334/dsj-2020-043,VERIFIED,verified by DOI
+Claw et al. 2018,10.1038/s41467-018-05188-3,VERIFIED,verified by DOI
+Condemi et al. 2021,10.1371/journal.pone.0254175,VERIFIED,verified by DOI
+"Dekker, Krackhardt, and Snijders 2007",10.1007/s11336-007-9016-1,VERIFIED,verified by DOI
+Green et al. 2010,10.1126/science.1188021,VERIFIED,verified by DOI
+Guillot and Rousset 2013,10.1111/2041-210x.12018,VERIFIED,verified by DOI
+Halverson and Bolnick 2008,10.1002/ajpa.20887,VERIFIED,verified by DOI
+Iasi et al. 2024,10.1126/science.adq3010,VERIFIED,verified by DOI
+Jacobs et al. 2019,10.1016/j.cell.2019.02.035,VERIFIED,verified by DOI
+Krackhardt 1988,10.1016/0378-8733(88)90004-4,VERIFIED,verified by DOI
+Lawson et al. 2020,10.1007/s00439-019-02014-8,VERIFIED,verified by DOI
+Legendre and Fortin 2010,10.1111/j.1755-0998.2010.02866.x,VERIFIED,verified by DOI
+Manel et al. 2003,10.1016/s0169-5347(03)00008-9,VERIFIED,verified by DOI
+Mantel 1967,,VERIFIED_NO_DOI,verified by PubMed
+Mazet et al. 2016,10.1038/hdy.2015.104,VERIFIED,verified by DOI
+Ohashi et al. 2006,10.1007/s10038-006-0375-8,VERIFIED,verified by DOI
+Ortega-Del Vecchyo and Slatkin 2019,10.1038/s41437-018-0169-8,VERIFIED,verified by DOI
+Petr et al. 2019,10.1073/pnas.1814338116,VERIFIED,verified by DOI
+Prüfer et al. 2017,10.1126/science.aao1887,VERIFIED,verified by DOI
+Quilodran et al. 2023,10.1126/sciadv.adg9817,VERIFIED,verified by DOI
+Reich et al. 2010,10.1038/nature09710,VERIFIED,verified by DOI
+Rousset 1997,10.1093/genetics/145.4.1219,VERIFIED,verified by DOI
+Sankararaman et al. 2014,10.1038/nature12961,VERIFIED,verified by DOI
+Sankararaman et al. 2016,10.1016/j.cub.2016.03.037,VERIFIED,verified by DOI
+Segurel et al. 2012,10.1073/pnas.1210603109,VERIFIED,verified by DOI
+Skov et al. 2018,10.1371/journal.pgen.1007641,VERIFIED,verified by DOI
+Tournebize and Chikhi 2025,10.1038/s41559-024-02591-6,YEAR_DISCREPANCY_EXPLAINED,"year mismatch: expected 2025, got 2024"
+Wang and Bradburd 2014,10.1111/mec.12938,VERIFIED,verified by DOI
+Wright 1943,10.1093/genetics/28.2.114,VERIFIED,verified by DOI

@@ -1,0 +1,907 @@
+You are Devin operating in ONE SINGLE VM and ONE canonical working tree.
+
+PROJECT
+Journal of Human Genetics (JHG) compact Article restructuring
+PLUS root-cause investigation of the previous submission-guideline misreading.
+
+SOURCE STATE
+Use the latest scientifically validated, hostile-reviewed, single-author JHG package as the scientific source of truth.
+
+Likely source package:
+JHG_SUBMISSION_SINGLE_AUTHOR_FINAL.zip
+or the latest equivalent final package.
+
+TARGET JOURNAL
+Journal of Human Genetics (JHG)
+
+AUTHORSHIP
+Single author:
+Onishi Tatsuki
+
+======================================================================
+PRIMARY GOALS
+======================================================================
+
+There are TWO equally important goals.
+
+GOAL A — SCIENTIFIC / FORMAT RETARGETING
+Convert the current ~4,000-word manuscript into a JHG-compliant compact Article WITHOUT changing the science.
+
+GOAL B — ROOT-CAUSE INVESTIGATION
+Determine exactly why the previous JHG preparation incorrectly treated the journal as allowing approximately:
+
+- 5,000 main-text words
+- 6 main display items
+- 50 references
+
+when the current JHG Guide to Authors appears to specify a much shorter Article format.
+
+Do not merely say "the guideline was misread."
+
+Identify the actual source, propagation path, failed QC gate, and preventive controls.
+
+======================================================================
+PART I — ROOT-CAUSE INVESTIGATION OF THE GUIDELINE ERROR
+======================================================================
+
+This investigation MUST happen BEFORE any manuscript compression.
+
+Do not assume the cause in advance.
+
+Possible causes to test include, but are not limited to:
+
+- confusion between Journal of Human Genetics and Human Genome Variation;
+- reuse of another Nature/Springer journal's limits;
+- stale cached guidance;
+- search-engine snippet contamination;
+- incorrect parsing of a PDF;
+- incorrect interpretation of an article-type table;
+- reliance on a secondary website rather than the journal's own guide;
+- mixing a live webpage with an older PDF;
+- requirements copied forward from an earlier retargeting package;
+- generator-script constants copied from another journal;
+- audit documents validating against the wrong source;
+- a submission checklist inheriting stale values;
+- an LLM-generated assumption that was never independently verified.
+
+DO NOT choose among these without evidence.
+
+----------------------------------------------------------------------
+A. INVENTORY ALL JHG REQUIREMENT SOURCES
+----------------------------------------------------------------------
+
+Search the entire working tree, prior JHG submission directories, scripts, markdown audits, prompts, generated DOCX metadata, and cached journal-source files for every source used to determine JHG requirements.
+
+Search for at least:
+
+"5000"
+"5,000"
+"1000"
+"1,000"
+"150"
+"250"
+"50 references"
+"20 references"
+"6 figures"
+"3 figures"
+"Article"
+"Journal of Human Genetics"
+"Human Genome Variation"
+"JHG"
+"HGV"
+"GTA"
+"Guide to Authors"
+"submission guidelines"
+
+Create:
+
+JHG_REQUIREMENTS_SOURCE_INVENTORY.md
+
+For every located source record:
+
+- filename
+- path
+- file type
+- journal name shown in source
+- URL if available
+- retrieval date if available
+- article type
+- abstract limit
+- main-text limit
+- display-item limit
+- reference limit
+- whether the source is official
+- whether it is current
+- whether it was actually used by a generator/audit
+
+----------------------------------------------------------------------
+B. VERIFY THE CURRENT AUTHORITATIVE JHG RULES
+----------------------------------------------------------------------
+
+Use authoritative sources only:
+
+- current nature.com/jhg pages
+- current JHG Guide to Authors PDF
+- current Springer Nature submission instructions
+- current JHG submission portal if accessible
+
+Record:
+
+- exact URL
+- document title
+- version/date
+- journal name
+- publisher
+- article-type table
+- exact relevant wording
+
+Create:
+
+JHG_AUTHORITATIVE_REQUIREMENTS.md
+
+Quote only short necessary excerpts.
+
+Determine the current correct limits for the appropriate original-research article type.
+
+Do not infer limits from another Springer Nature journal.
+
+----------------------------------------------------------------------
+C. EXPLICITLY CHECK FOR JOURNAL-CONFLATION
+----------------------------------------------------------------------
+
+Investigate whether the incorrect:
+
+- 5,000-word
+- 6-display
+- 50-reference
+
+limits correspond to another journal.
+
+In particular, explicitly compare:
+
+Journal of Human Genetics
+versus
+Human Genome Variation
+
+and any other related Springer Nature human-genetics journal that appears in cached guidance.
+
+Create a comparison table:
+
+Journal | Article type | Abstract | Main text | Displays | References | Source URL
+
+If the incorrect JHG limits exactly or approximately match another journal's rules, document that as evidence.
+
+Do not state that this was the cause unless the project history shows that those values actually propagated from that source.
+
+----------------------------------------------------------------------
+D. TRACE THE PROPAGATION PATH
+----------------------------------------------------------------------
+
+Find where the incorrect values FIRST entered the project.
+
+Inspect:
+
+- Devin prompts
+- requirements audit markdown files
+- submission checklists
+- manuscript-generation scripts
+- validation scripts
+- constants/config files
+- final handoff documents
+
+For each relevant commit/file state if accessible, identify:
+
+1. earliest appearance of the incorrect limits;
+2. which file/script then propagated them;
+3. which later QC documents repeated them;
+4. why no later validation rejected them.
+
+Create:
+
+JHG_REQUIREMENTS_PROPAGATION_TRACE.md
+
+Use a sequence such as:
+
+Source A
+→ audit file B
+→ generator script C
+→ checklist D
+→ final handoff E
+
+with evidence for every arrow.
+
+If Git history is available, use commit hashes and dates.
+
+----------------------------------------------------------------------
+E. INVESTIGATE WHY QC PASSED
+----------------------------------------------------------------------
+
+This is critical.
+
+The previous package reportedly had:
+
+- requirements audit PASS
+- hostile review PASS
+- format audit PASS
+- final handoff READY
+
+despite using the wrong journal limits.
+
+Explain exactly how this was possible.
+
+Check whether:
+
+- the requirements audit relied on the same incorrect source as the generator;
+- the build check only validated against hard-coded constants;
+- there was no independent second-source verification;
+- the audit checked internal consistency rather than journal truth;
+- the journal name was not asserted when ingesting guideline files;
+- the PDF title/journal identity was not verified;
+- a cached source was accepted without date checking.
+
+Create:
+
+JHG_QC_FAILURE_ANALYSIS.md
+
+For each failed control:
+
+Expected safeguard
+Actual behavior
+Why it failed
+Consequence
+Required remediation
+
+----------------------------------------------------------------------
+F. ROOT-CAUSE CLASSIFICATION
+----------------------------------------------------------------------
+
+Create:
+
+JHG_REQUIREMENTS_ROOT_CAUSE.md
+
+Separate:
+
+PRIMARY ROOT CAUSE
+
+CONTRIBUTING FACTORS
+
+DETECTION FAILURE
+
+PROPAGATION MECHANISM
+
+IMPACT
+
+Do not use vague wording like:
+"human error"
+or
+"the guideline was confusing"
+
+unless supported by evidence.
+
+State uncertainty explicitly where evidence is incomplete.
+
+----------------------------------------------------------------------
+G. REPAIR THE REQUIREMENT-VALIDATION SYSTEM
+----------------------------------------------------------------------
+
+Implement durable safeguards.
+
+At minimum add a machine-readable journal-requirements manifest for JHG containing:
+
+- journal full name
+- journal abbreviation
+- publisher
+- canonical journal URL
+- guide URL
+- guide version/date
+- article type
+- abstract limit
+- main-text limit
+- display limit
+- reference limit
+- access date
+
+The build must verify that:
+
+1. the journal name in the source document matches "Journal of Human Genetics";
+2. the canonical URL belongs to the JHG domain/page family;
+3. article-type limits come from the current JHG source;
+4. a cached source older than the current verified source cannot silently override it;
+5. the build fails if requirements are missing or ambiguous.
+
+If feasible, require TWO independent official JHG sources for critical limits:
+- current Guide to Authors
+and
+- live journal/submission page
+
+If those sources conflict:
+FAIL THE BUILD
+and require manual resolution.
+
+Create:
+
+JHG_REQUIREMENTS_VALIDATION_GUARD.md
+
+and implement the corresponding validation code.
+
+----------------------------------------------------------------------
+H. CROSS-JOURNAL CONTAMINATION GUARD
+----------------------------------------------------------------------
+
+Add a safeguard to prevent requirements from one journal being used for another.
+
+For every journal-specific config or source snapshot, require:
+
+journal_slug
+journal_full_name
+publisher
+canonical_domain
+
+The build must fail if, for example:
+
+target_journal = Journal of Human Genetics
+
+but a requirements file identifies:
+
+Human Genome Variation
+
+or any other journal.
+
+Document the test in:
+
+JHG_CROSS_JOURNAL_GUARD_TEST.md
+
+----------------------------------------------------------------------
+I. REGRESSION TEST
+----------------------------------------------------------------------
+
+Create an automated regression test that deliberately supplies a foreign journal's requirement file to the JHG builder.
+
+Expected result:
+FAIL
+
+Also test the correct current JHG requirement source.
+
+Expected result:
+PASS
+
+Record exact commands and results.
+
+======================================================================
+PART II — VERIFY CURRENT JHG REQUIREMENTS BEFORE COMPRESSION
+======================================================================
+
+Only after Part I is complete, verify the current appropriate JHG article limits.
+
+Create:
+
+JHG_COMPACT_REQUIREMENTS_RECHECK.md
+
+Confirm:
+
+- Article type
+- Abstract word limit
+- main-text word limit
+- display-item limit
+- reference limit
+- Supplement rules
+- whether Supplementary Methods are permitted
+- whether Supplementary references are permitted
+- title-page requirements
+- declarations
+- figure formats
+- line numbering
+- AI disclosure
+- data/code requirements
+- traditional publication route
+- mandatory fees
+
+If the verified current requirements differ from the expected compact format, use the verified CURRENT values.
+
+======================================================================
+PART III — JHG COMPACT ARTICLE RESTRUCTURING
+======================================================================
+
+Assuming the verified current Article format remains approximately:
+
+- Abstract <=150 words
+- main text <=1,000 words
+- main displays <=3
+- references <=20
+
+convert the manuscript to that format.
+
+If the verified limits differ, use the actual current limits.
+
+======================================================================
+1. NON-NEGOTIABLE SCIENTIFIC FREEZE
+======================================================================
+
+ALL scientific analyses are frozen.
+
+Do NOT:
+
+- add data
+- add populations
+- add loci
+- add simulations
+- add power analyses
+- add subgroup analyses
+- change sample inclusion
+- change window sizes
+- change QAP
+- change residual definitions
+- change FDR
+- search for positive findings
+
+Do NOT change:
+
+- effect estimates
+- P values
+- q values
+- z scores
+- sample counts
+- population counts
+- pair counts
+- ABO statistics
+- figure values
+- table values
+
+If any scientific number changes unexpectedly:
+STOP and investigate.
+
+======================================================================
+2. SCIENTIFIC IDENTITY TO PRESERVE
+======================================================================
+
+The compact Article must still communicate:
+
+PROBLEM
+Pairwise genomic comparisons are non-independent because the same populations recur across many pairs.
+
+INFERENTIAL PRINCIPLE
+An apparently exceptional pair should be judged against a population-wide structural expectation.
+
+EMPIRICAL DEMONSTRATION
+Neanderthal and Denisovan segment-sharing profiles across:
+
+- 3,134 individuals
+- 66 human populations
+- 2,145 population pairs
+
+MAIN RESULT
+Broad population structure is strong, but no pair survives the prespecified residual + FDR criterion; ABO also does not exceed the genome-wide structural background.
+
+Do NOT let compression reduce the paper to:
+"nothing significant was found"
+or
+"QAP was applied to public data."
+
+======================================================================
+3. TITLE
+======================================================================
+
+Retain:
+
+"A structural null for exceptional pairwise genomic similarity: archaic-segment sharing across 66 human populations"
+
+unless current JHG rules require otherwise.
+
+======================================================================
+4. ABSTRACT
+======================================================================
+
+Target <=145 words if current limit is 150.
+
+Must include:
+
+- repeated-population non-independence
+- structural null
+- 3,134 individuals
+- 66 populations
+- 2,145 pairs
+- Neanderthal / Denisovan profiles
+- QAP
+- key distance association
+- zero supported pair
+- ABO focal result
+- implication for human population-genetic interpretation
+
+Do not include extended robustness or prior-art discussion.
+
+======================================================================
+5. MAIN TEXT
+======================================================================
+
+Target <=975 words if current limit is 1,000.
+
+Use:
+
+Introduction
+Methods
+Results
+Discussion
+
+Suggested budget:
+
+Introduction: 160–190 words
+Methods: 210–240 words
+Results: 280–320 words
+Discussion: 250–290 words
+
+======================================================================
+6. INTRODUCTION
+======================================================================
+
+Do only four jobs:
+
+1. pairwise genomic comparison is common in human population genetics;
+2. repeated populations create dependence;
+3. structural-null question;
+4. archaic introgression as empirical test bed.
+
+Keep prior art minimal but sufficient.
+
+======================================================================
+7. METHODS
+======================================================================
+
+Must retain:
+
+- public archaic-segment source
+- 3,134 individuals / 66 populations
+- 500-kb windows
+- population profiles
+- pairwise Pearson similarity
+- geographic distance
+- QAP / joint population-label permutation
+- pair residuals
+- BH-FDR
+- criterion z>2 and q<0.10
+- ABO focal test
+- pointer to Supplementary Methods
+
+Move details to Supplement.
+
+======================================================================
+8. RESULTS
+======================================================================
+
+Must retain:
+
+- 66 populations / 3,134 individuals / 2,145 pairs
+- Neanderthal r=-0.497
+- Denisovan r=-0.462
+- partial r=-0.369/-0.326
+- QAP P=0.0001/0.0002
+- 1,891 non-admixed pairs
+- max z=2.21/2.53
+- min q=0.78/0.82
+- zero supported pairs
+- ABO z=1.78 / 0.63
+- ABO percentiles and empirical P
+- one-sentence robustness summary
+
+======================================================================
+9. DISCUSSION
+======================================================================
+
+Retain:
+
+- broad structure explains apparent pairwise variation
+- pair-specific excess is the actual inferential question
+- population structure and QAP are not new
+- contribution is structural-null workflow
+- no excess != no shared history
+- ABO unexceptional
+- concise limitations
+- final human-population-genetics implication
+
+======================================================================
+10. MAIN DISPLAYS
+======================================================================
+
+Use at most 3.
+
+Preferred:
+
+Figure 1
+Structural-null conceptual workflow
+
+Figure 2
+Distance vs archaic-profile similarity
+
+Figure 3
+Residual z vs q plot
+(current residual figure, renumbered)
+
+Move to Supplement:
+
+- similarity heatmap
+- robustness figure
+- current Table 1
+
+Do not delete scientific material.
+
+Create:
+
+JHG_COMPACT_DISPLAY_DECISIONS.md
+
+======================================================================
+11. SUPPLEMENT
+======================================================================
+
+Preserve scientific completeness.
+
+Move/retain:
+
+Supplementary Methods
+- full data source
+- filters
+- profile construction
+- coordinates
+- regression model
+- QAP details
+- residual null
+- FDR
+- robustness
+- ABO focal method
+- ethics/data governance detail
+
+Supplementary Results
+- all robustness analyses
+- alternate metrics
+- window sizes
+- sample thresholds
+- dataset restrictions
+- admixture exclusions
+- regional omissions
+- full pair rankings
+
+Supplementary Figures/Tables
+- full matrices
+- robustness figures
+- ABO context
+- global map
+- moved Table 1
+- existing Table S1
+
+======================================================================
+12. REFERENCES
+======================================================================
+
+Keep <=20 if current JHG limit is 20.
+
+Retain only essential main references.
+
+Move nonessential detail references to Supplement if permitted.
+
+Create:
+
+JHG_COMPACT_REFERENCE_DECISIONS.md
+
+======================================================================
+13. SINGLE-AUTHOR VOICE
+======================================================================
+
+Preserve completed single-author voice.
+
+Zero inappropriate authorial:
+we / our / us / authors
+
+Use neutral scientific prose or "I" when natural.
+
+======================================================================
+14. COVER LETTER
+======================================================================
+
+Create a compact-JHG cover letter using first-person singular.
+
+Explain:
+
+- central human population-genetic problem
+- dependence of repeated population pairs
+- structural-null workflow
+- 3,134 individuals / 66 populations / 2,145 pairs
+- zero FDR-supported exceptional pair
+- ABO negative focal result
+- why negative result matters
+- JHG fit: population genetics / human evolution / genome diversity
+- novelty boundary: not new QAP, but new inferential framing/workflow
+- detailed robustness retained in Supplement
+
+Do not mention prior rejection.
+
+======================================================================
+15. HOSTILE REVIEW OF COMPACT VERSION
+======================================================================
+
+Create:
+
+JHG_COMPACT_HOSTILE_REVIEW.md
+
+Review from:
+
+A. JHG editor
+B. human population geneticist
+C. statistical geneticist
+D. skeptical reviewer
+
+Check that compression did NOT:
+- destroy the contribution
+- hide essential caveats
+- create overclaiming
+- make the paper incomprehensible without Supplement
+
+Classify:
+BLOCKING / MAJOR / MINOR / NO ISSUE
+
+Fix all BLOCKING/MAJOR issues without new analysis.
+
+======================================================================
+16. WORD-LIMIT HARD GATES
+======================================================================
+
+Programmatically count:
+
+- Abstract
+- main text
+- references
+- main displays
+
+Build must FAIL if current JHG limits are exceeded.
+
+Create:
+
+JHG_COMPACT_LIMIT_CHECK.md
+
+======================================================================
+17. SCIENTIFIC FREEZE CHECK
+======================================================================
+
+Compare compressed version with audited source.
+
+Confirm:
+
+- every retained scientific number identical
+- no sign changed
+- no P/q/z changed
+- no sample count changed
+- no claim strengthened
+- no figure value changed
+- all moved supplementary content preserved
+
+Create:
+
+JHG_COMPACT_SCIENTIFIC_FREEZE_CHECK.md
+
+Status:
+PASS / FAIL
+
+======================================================================
+18. CROSS-REFERENCE QC
+======================================================================
+
+After moving/renumbering displays:
+
+- verify all Figure citations
+- verify Supplement numbering
+- verify moved Table 1 numbering
+- remove stale Figure 4/Figure 5/Table 1 references where appropriate
+- verify captions
+
+Create:
+
+JHG_COMPACT_CROSS_REFERENCE_AUDIT.md
+
+======================================================================
+19. FINAL OUTPUTS
+======================================================================
+
+Produce:
+
+1. JHG_COMPACT_MAIN_MANUSCRIPT.docx
+2. JHG_COMPACT_MAIN_MANUSCRIPT_inline_review.docx if useful
+3. JHG_COMPACT_TITLE_PAGE.docx
+4. JHG_COMPACT_COVER_LETTER.docx
+5. JHG_COMPACT_SUPPORTING_INFORMATION.docx
+6. JHG_COMPACT_SUPPLEMENTARY_README.docx or .txt if required
+7. validated data archive/data detail
+8. three main figures
+9. supplementary figures
+10. supplementary tables
+
+AUDIT / ROOT-CAUSE FILES:
+
+11. JHG_REQUIREMENTS_SOURCE_INVENTORY.md
+12. JHG_AUTHORITATIVE_REQUIREMENTS.md
+13. JHG_REQUIREMENTS_PROPAGATION_TRACE.md
+14. JHG_QC_FAILURE_ANALYSIS.md
+15. JHG_REQUIREMENTS_ROOT_CAUSE.md
+16. JHG_REQUIREMENTS_VALIDATION_GUARD.md
+17. JHG_CROSS_JOURNAL_GUARD_TEST.md
+18. JHG_COMPACT_REQUIREMENTS_RECHECK.md
+19. JHG_COMPACT_DISPLAY_DECISIONS.md
+20. JHG_COMPACT_REFERENCE_DECISIONS.md
+21. JHG_COMPACT_HOSTILE_REVIEW.md
+22. JHG_COMPACT_LIMIT_CHECK.md
+23. JHG_COMPACT_SCIENTIFIC_FREEZE_CHECK.md
+24. JHG_COMPACT_CROSS_REFERENCE_AUDIT.md
+25. SUBMISSION_CHECKLIST_JHG_COMPACT.md
+26. FINAL_HANDOFF_JHG_COMPACT.md
+27. DEVIN_JHG_COMPACT_WITH_ROOT_CAUSE_PROMPT.txt
+
+Final package:
+
+JHG_COMPACT_SUBMISSION_FINAL.zip
+
+======================================================================
+20. FINAL HANDOFF
+======================================================================
+
+FINAL_HANDOFF_JHG_COMPACT.md must report:
+
+A. final title
+
+B. verified current JHG Article limits
+
+C. root cause of previous requirements misreading
+
+D. first file/commit where wrong limits entered
+
+E. propagation path
+
+F. why prior QC failed to detect it
+
+G. safeguards added
+
+H. regression-test results
+
+I. final Abstract word count
+
+J. final main-text word count
+
+K. final display count
+
+L. final reference count
+
+M. what moved to Supplement
+
+N. analysis freeze:
+CONFIRMED / VIOLATED
+
+O. scientific values changed:
+NO / YES
+
+P. single-author voice:
+PASS / FAIL
+
+Q. hostile compact review:
+PASS / FAIL
+
+R. cross-reference audit:
+PASS / FAIL
+
+S. exact upload-ready files
+
+T. final verdict:
+
+READY FOR JHG SUBMISSION
+
+or
+
+NOT READY — with exact blocker.
+
+======================================================================
+STOP CONDITION
+======================================================================
+
+Do not stop after identifying the correct word limit.
+
+The task is complete only when BOTH are done:
+
+1. the JHG manuscript is honestly reformatted to the verified current Article requirements;
+2. the root cause of the previous requirements failure is traced, documented, and protected against recurrence.
+
+Do not speculate about the root cause.
+Prove it from repository history, source files, scripts, prompts, and journal documents wherever possible.

@@ -1,0 +1,705 @@
+You are Devin operating in ONE SINGLE VM and ONE canonical working tree.
+
+PROJECT
+Journal of Human Genetics final single-author voice consistency pass.
+
+SOURCE PACKAGE
+Use the current JHG submission package as the sole submission-package source of truth.
+
+Likely package:
+JHG_SUBMISSION_FINAL.zip
+
+AUTHORSHIP
+This manuscript has ONE author only:
+
+Onishi Tatsuki
+
+PRIMARY GOAL
+Convert the entire JHG submission package to internally consistent SINGLE-AUTHOR language.
+
+This is a style/voice consistency task only.
+
+DO NOT reopen the science.
+DO NOT rerun analyses.
+DO NOT alter numerical results.
+DO NOT change citations, figures, tables, methods, conclusions, or journal targeting except where a grammatical change is required to convert plural-author language to single-author language.
+
+======================================================================
+NON-NEGOTIABLE SCIENTIFIC FREEZE
+======================================================================
+
+Do NOT change:
+
+- title
+- scientific claims
+- hypotheses
+- data
+- sample sizes
+- population counts
+- pair counts
+- methods
+- model definitions
+- QAP procedures
+- residual definitions
+- FDR procedures
+- P values
+- q values
+- z scores
+- effect estimates
+- figure contents
+- table contents
+- supplementary numerical values
+- references
+- citation order
+- data/code availability facts
+- ethics facts
+- AI disclosure substance
+
+If any scientific value changes unexpectedly:
+STOP and investigate.
+
+======================================================================
+GLOBAL AUTHOR-VOICE RULE
+======================================================================
+
+Because this is a single-author paper, remove inappropriate first-person plural authorial language.
+
+Default preference:
+
+1. Use "I" / "my" / "me" where explicit author agency is useful and natural.
+2. Use neutral active constructions where cleaner.
+3. Use passive voice sparingly when it improves scientific style.
+4. Do NOT mechanically replace every occurrence of "we" with "I" if "we" refers genuinely to:
+   - humans collectively,
+   - readers and author together,
+   - a general scientific community,
+   - a quoted phrase,
+   - a cited study with multiple authors.
+
+Every occurrence must be interpreted in context.
+
+Examples:
+
+AUTHORIAL:
+"We analysed publicly archived segment calls..."
+→ "I analysed publicly archived segment calls..."
+
+AUTHORIAL:
+"We ask three questions."
+→ "I ask three questions."
+or, preferably if stylistically stronger:
+"This study addresses three questions."
+
+AUTHORIAL:
+"Our results show..."
+→ "The results show..."
+or:
+"I found that..."
+Choose the more natural scientific phrasing.
+
+AUTHORIAL:
+"Our analysis does not identify..."
+→ "The analysis does not identify..."
+
+NOT AUTHORIAL:
+"We know that population structure..."
+If this means the scientific community generally, do NOT automatically convert to "I know".
+
+======================================================================
+FILES / SURFACES TO AUDIT
+======================================================================
+
+Audit EVERY user-facing or submission-related file in the current JHG package, including at minimum:
+
+1. Main manuscript
+2. Abstract
+3. Title page
+4. Cover letter
+5. Supporting Information
+6. Supplementary README
+7. Figure captions
+8. Table captions
+9. Data-detail / data-description files
+10. Data availability statement
+11. Code availability statement
+12. Ethics statement
+13. AI / Generative AI declaration
+14. Funding statement
+15. Competing Interests / Conflict of Interest statement
+16. Author Contributions statement
+17. Acknowledgements
+18. Submission checklist
+19. Final handoff
+20. Journal-specific metadata text or paste-ready responses
+21. Any response templates or author notes intended for submission
+22. README files included in the submission package if they contain authorial prose
+
+Also search all DOCX, TXT, MD, CSV metadata descriptions, and generated plain-text files included in upload/ or author_reference/ where relevant.
+
+Do NOT alter machine-readable scientific data merely because a field contains the character sequence "we".
+
+======================================================================
+SEARCH TERMS
+======================================================================
+
+Search globally and contextually for at least:
+
+- we
+- We
+- WE
+- our
+- Our
+- OUR
+- ours
+- Ours
+- us
+- Us
+- ourselves
+- co-authors
+- coauthors
+- authors
+- all authors
+- the authors
+- corresponding authors
+
+Also inspect:
+
+- "the author"
+- "the authors"
+- "we have"
+- "we used"
+- "we analysed"
+- "we analyzed"
+- "we found"
+- "we show"
+- "we report"
+- "we demonstrate"
+- "we propose"
+- "we define"
+- "we refer"
+- "we therefore"
+- "we conclude"
+- "our study"
+- "our analysis"
+- "our results"
+- "our data"
+- "our code"
+- "our manuscript"
+- "our findings"
+
+======================================================================
+MAIN MANUSCRIPT RULES
+======================================================================
+
+Apply single-author voice consistently throughout.
+
+ABSTRACT
+Prefer impersonal scientific prose where possible.
+
+Examples:
+
+"We analysed..."
+→ "I analysed..."
+or:
+"The analysis included..."
+
+"We show..."
+→ "The results show..."
+
+INTRODUCTION
+Prefer:
+
+"This study..."
+"The present analysis..."
+"I ask..."
+
+rather than repetitive "I".
+
+METHODS
+Where author agency matters:
+
+"I analysed..."
+"I calculated..."
+"I used..."
+"I excluded..."
+
+Where procedure is more important:
+
+"Population coordinates were consolidated..."
+"Pairwise similarity was calculated..."
+
+Avoid an awkward manuscript full of "I" at every sentence.
+
+RESULTS
+Prefer result-centered language:
+
+"The analysis retained..."
+"Profile similarity declined..."
+"No pair met..."
+
+rather than:
+"I found..."
+
+DISCUSSION
+Use:
+
+"These results..."
+"The analysis..."
+"The present study..."
+"I interpret..."
+
+where appropriate.
+
+Do NOT use "we" as an authorial pronoun.
+
+======================================================================
+COVER LETTER — STRICT SINGLE-AUTHOR RULE
+======================================================================
+
+The cover letter must use FIRST PERSON SINGULAR consistently.
+
+Allowed:
+
+- I submit
+- I report
+- I show
+- I believe
+- I designed
+- I analysed
+- I take full responsibility
+
+Not allowed:
+
+- we submit
+- we report
+- our manuscript
+- our study
+- our findings
+
+when referring to authorship.
+
+Prefer:
+
+"the manuscript"
+"this study"
+"the analysis"
+
+where this reads more professionally than repeated "my".
+
+The cover letter must never imply multiple authors.
+
+======================================================================
+AUTHOR CONTRIBUTIONS
+======================================================================
+
+For a single-author paper, ensure the contribution statement clearly reflects sole authorship.
+
+Preferred style, adapted to actual journal requirements:
+
+"Onishi Tatsuki was responsible for conceptualization, methodology, formal analysis, visualization, writing—original draft, and writing—review and editing."
+
+If JHG/Springer Nature accepts first-person contribution statements, a concise alternative may be used, but prefer the standard CRediT-style third-person form.
+
+Do NOT write:
+
+"All authors contributed..."
+"There was agreement among all authors..."
+"The authors..."
+
+unless required by a fixed submission-system template that cannot be changed.
+
+======================================================================
+AUTHORSHIP / APPROVAL DECLARATIONS
+======================================================================
+
+Convert plural-author declarations appropriately.
+
+Examples:
+
+"All authors have read and approved the manuscript."
+→ "The author has read and approved the manuscript."
+or omit if unnecessary.
+
+"All authors consent to publication."
+→ "The author consents to publication."
+
+"The authors declare no competing interests."
+→ "The author declares no competing interests."
+
+"All authors approved the final version."
+→ "The author approved the final version."
+
+Do not invent declarations not already present or required.
+
+======================================================================
+FUNDING
+======================================================================
+
+Preserve funding facts.
+
+If current wording says:
+
+"The authors received no specific funding..."
+
+change to:
+
+"The author received no specific funding..."
+
+or:
+
+"This research received no specific funding..."
+
+Prefer neutral wording when elegant.
+
+======================================================================
+COMPETING INTERESTS
+======================================================================
+
+Preferred:
+
+"The author declares no competing interests."
+
+or the exact JHG-required single-author wording.
+
+Do not change substantive disclosure.
+
+======================================================================
+ACKNOWLEDGEMENTS
+======================================================================
+
+Do not use "we thank".
+
+Use:
+
+"I thank..."
+
+or:
+
+"The author thanks..."
+
+Prefer "I thank..." for genuine personal acknowledgement unless journal style favors third person.
+
+Do not alter names or acknowledgement substance.
+
+======================================================================
+DATA / CODE AVAILABILITY
+======================================================================
+
+Avoid inappropriate authorial plurals.
+
+Examples:
+
+"Our code is available..."
+→ "The analysis code is available..."
+
+"Our derived data..."
+→ "The derived data..."
+
+Prefer objective resource-centered wording.
+
+Do not change repository URLs, DOIs, accessions, filenames, or availability status.
+
+======================================================================
+ETHICS / DATA GOVERNANCE
+======================================================================
+
+Preserve the exact scientific/ethical substance.
+
+Change authorial plural only.
+
+Examples:
+
+"We did not recruit..."
+→ "No participants were newly recruited..."
+
+or:
+
+"I did not recruit..."
+
+Prefer neutral wording for ethics statements.
+
+Do not weaken Indigenous data-governance language.
+
+======================================================================
+AI / GENERATIVE AI DECLARATION
+======================================================================
+
+Preserve the finalized disclosure substance.
+
+Ensure single-author language.
+
+Preferred pattern:
+
+"During preparation of this work, the author used [tool] for [purpose]. The author reviewed and edited the output as needed and takes full responsibility for the content."
+
+Do NOT add or remove AI tools.
+Do NOT broaden stated use.
+
+======================================================================
+SUPPLEMENTARY INFORMATION
+======================================================================
+
+Audit all prose for plural-author language.
+
+Keep figure/table descriptions scientific and impersonal where possible.
+
+Do not change scientific values.
+
+======================================================================
+TITLE PAGE
+======================================================================
+
+Verify:
+
+- exactly one author listed;
+- one corresponding author;
+- no plural "Authors" wording unless it is a fixed form label;
+- author name spelling is consistent:
+  Onishi Tatsuki
+- ORCID, affiliation, e-mail remain unchanged;
+- author count is exactly one.
+
+Do not modify validated personal metadata.
+
+======================================================================
+SUBMISSION CHECKLIST / METADATA
+======================================================================
+
+Convert statements such as:
+
+"Authors should upload..."
+
+ONLY if these are written as project-specific instructions.
+
+Do NOT alter quoted journal instructions merely because they use plural "authors".
+
+For project-specific checklist language:
+
+- "Author action" is preferable to "Authors action".
+- "The author should..." is acceptable.
+
+======================================================================
+AUDIT QUOTED / CITED MATERIAL CAREFULLY
+======================================================================
+
+Do NOT alter:
+
+- direct quotations from journal instructions;
+- titles of cited papers;
+- article titles containing "we";
+- fixed journal field labels;
+- quoted reviewer/editor language;
+- references;
+- file names.
+
+Only change authorial voice belonging to this manuscript/package.
+
+======================================================================
+CONSISTENCY WITH SINGLE AUTHOR
+======================================================================
+
+Search for any conceptual implication of multiple authors, including:
+
+- "both authors"
+- "co-authors"
+- "coauthor"
+- "all authors"
+- "authors contributed equally"
+- "author contributions" plural prose
+- multiple corresponding authors
+- plural approval statements
+
+There must be no accidental indication of a multi-author paper.
+
+======================================================================
+STYLE RULE
+======================================================================
+
+Do NOT produce an awkward "I-heavy" manuscript.
+
+Use this priority:
+
+1. result/process-centered neutral prose
+2. "this study / the analysis / the results"
+3. first-person singular "I" when explicit agency improves clarity
+
+Avoid:
+
+"The author analysed..."
+
+throughout the scientific body, because it sounds unnatural.
+
+Reserve "the author" mainly for formal declarations if appropriate.
+
+======================================================================
+NO OTHER EDITS
+======================================================================
+
+Do NOT:
+
+- improve prose unrelated to author voice;
+- shorten or expand scientific arguments;
+- add citations;
+- delete citations;
+- modify title;
+- modify abstract content beyond pronoun/grammar adjustments;
+- change journal targeting;
+- change figures/tables;
+- change formatting except where needed to preserve clean DOCX output.
+
+======================================================================
+FINAL GLOBAL SEARCH
+======================================================================
+
+After edits, run a global search across all editable submission-package text for:
+
+we
+our
+ours
+us
+ourselves
+co-author
+coauthor
+all authors
+the authors
+
+For every remaining occurrence, classify it as:
+
+A. valid general/community use
+B. quoted/fixed journal language
+C. cited title/reference
+D. incorrect authorial plural
+
+There must be ZERO category-D occurrences.
+
+Create:
+
+JHG_SINGLE_AUTHOR_VOICE_AUDIT.md
+
+Include a table:
+
+File | Original phrase | Revised phrase | Reason
+
+and a section:
+
+REMAINING "WE/OUR/US" OCCURRENCES
+
+listing each remaining occurrence and why it is valid.
+
+======================================================================
+FINAL NUMERIC / SCIENTIFIC FREEZE CHECK
+======================================================================
+
+Compare pre- and post-edit manuscript/package.
+
+Confirm:
+
+- no scientific number changed;
+- no citation added/removed;
+- no reference changed;
+- no figure changed;
+- no table changed;
+- no data file changed;
+- no code changed;
+- no DOI/URL/accession changed.
+
+Create:
+
+JHG_SINGLE_AUTHOR_FREEZE_CHECK.md
+
+Final status:
+
+PASS / FAIL
+
+======================================================================
+OUTPUTS
+======================================================================
+
+Regenerate all user-facing submission files affected by author voice, including at minimum:
+
+1. JHG_MAIN_MANUSCRIPT_SINGLE_AUTHOR_FINAL.docx
+2. JHG_TITLE_PAGE_SINGLE_AUTHOR_FINAL.docx
+3. JHG_COVER_LETTER_SINGLE_AUTHOR_FINAL.docx
+4. JHG_SUPPORTING_INFORMATION_SINGLE_AUTHOR_FINAL.docx
+5. JHG_SUPPLEMENTARY_README_SINGLE_AUTHOR_FINAL.docx or .txt if applicable
+6. SUBMISSION_CHECKLIST_JHG_SINGLE_AUTHOR_FINAL.md
+7. FINAL_HANDOFF_JHG_SINGLE_AUTHOR.md
+8. JHG_SINGLE_AUTHOR_VOICE_AUDIT.md
+9. JHG_SINGLE_AUTHOR_FREEZE_CHECK.md
+
+Preserve unchanged:
+
+- figures
+- tables
+- data archive
+- code
+
+unless file packaging requires copies.
+
+Create final package:
+
+JHG_SUBMISSION_SINGLE_AUTHOR_FINAL.zip
+
+The upload-ready folder should contain only the current final submission files, not obsolete plural-author versions.
+
+======================================================================
+FINAL HANDOFF
+======================================================================
+
+FINAL_HANDOFF_JHG_SINGLE_AUTHOR.md must state:
+
+1. Single author:
+Onishi Tatsuki
+
+2. Main manuscript authorial plural:
+ZERO inappropriate occurrences
+
+3. Cover letter authorial plural:
+ZERO inappropriate occurrences
+
+4. Supplement authorial plural:
+ZERO inappropriate occurrences
+
+5. Formal declarations:
+single-author wording confirmed
+
+6. Scientific values changed:
+NO / YES
+
+7. Citations/references changed:
+NO / YES
+
+8. Figures/tables changed:
+NO / YES
+
+9. Data/code changed:
+NO / YES
+
+10. Exact upload-ready filenames
+
+11. Final verdict:
+
+READY FOR JHG SUBMISSION
+
+or
+
+NOT READY — with exact blocker
+
+======================================================================
+STOP CONDITION
+======================================================================
+
+This is a pure single-author voice consistency pass.
+
+Do not reopen science.
+Do not rerun analysis.
+Do not perform journal retargeting.
+Do not perform new literature review.
+
+Stop only after:
+
+- every submission-related text file has been audited;
+- every inappropriate authorial "we/our/us" has been removed;
+- valid non-authorial occurrences have been documented;
+- scientific freeze is confirmed;
+- final single-author submission ZIP is generated.

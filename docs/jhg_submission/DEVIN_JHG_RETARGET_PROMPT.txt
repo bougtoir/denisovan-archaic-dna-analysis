@@ -1,0 +1,917 @@
+You are Devin operating in ONE SINGLE VM and ONE canonical working tree.
+
+PROJECT
+Retarget the finalized, fully audited Molecular Ecology manuscript to the Journal of Human Genetics (JHG; Springer Nature / Japan Society of Human Genetics).
+
+SOURCE STATE
+Use the latest scientifically validated and fully audited Molecular Ecology package as the scientific source of truth.
+
+Likely source package:
+MOLECULAR_ECOLOGY_SUBMISSION_READY_FINAL.zip
+or the latest audited/final equivalent.
+
+CURRENT MANUSCRIPT TITLE
+"Population structure defines the null expectation for pairwise genomic similarity: archaic-segment sharing across 66 human populations"
+
+TARGET JOURNAL
+Journal of Human Genetics (JHG)
+
+PRIMARY GOAL
+Produce a submission-ready JHG package by repositioning the manuscript toward:
+
+HUMAN POPULATION GENETICS
++
+HUMAN EVOLUTION
++
+GENOME DIVERSITY
++
+DEPENDENCE-AWARE INTERPRETATION OF PAIRWISE GENOMIC SIMILARITY
+
+while preserving the validated structural-null framework and the fully audited scientific results.
+
+This is NOT a new scientific project.
+This is NOT a re-analysis project.
+This is NOT an opportunity to search for positive findings.
+This is NOT a full rewrite from scratch.
+
+======================================================================
+0. CRITICAL FIRST GATE — VERIFY CURRENT JHG ARTICLE-TYPE LIMITS
+======================================================================
+
+Before doing ANY manuscript editing, verify the CURRENT Journal of Human Genetics submission requirements from authoritative sources only:
+
+- current JHG Guide to Authors
+- current JHG submission portal instructions if accessible
+- current JHG article-type specifications
+- current JHG published-article conventions
+
+Authoritative sources:
+- nature.com/jhg
+- Springer Nature JHG pages
+- JHG/JSHG submission system where accessible
+
+Current public JHG information explicitly lists:
+- population genetics
+- human evolution
+- genome diversity
+within scope.
+
+However, an available JHG Guide-to-Authors PDF appears to contain unusually restrictive specifications for "Article". This may be current, outdated, misparsed, or associated with a specific format.
+
+DO NOT blindly compress the manuscript to fit a suspicious or possibly outdated limit.
+
+Create:
+JHG_REQUIREMENTS_AUDIT.md
+
+The audit must establish:
+
+1. accepted article types;
+2. appropriate article type for this manuscript;
+3. abstract limit;
+4. main-text word limit;
+5. figure/table limit;
+6. reference limit;
+7. title-page requirements;
+8. supplementary-material rules;
+9. data/code availability rules;
+10. AI/LLM disclosure policy;
+11. peer-review/anonymization model;
+12. cover-letter requirements;
+13. publication route;
+14. whether traditional subscription route is available;
+15. whether traditional publication has:
+    - mandatory APC,
+    - page charges,
+    - color charges,
+    - any other unavoidable fees;
+16. optional OA APC;
+17. repository/deposition requirements.
+
+CRITICAL STOP RULE:
+If the CURRENT appropriate JHG article type truly imposes a limit that would require deleting essential scientific content or compressing this ~4,000–5,000-word research article to an implausibly short form, DO NOT mutilate the paper.
+
+Instead:
+- create JHG_FORMAT_BLOCKER_REPORT.md;
+- explain the conflict;
+- identify whether another valid JHG article type exists;
+- set final verdict = NOT READY FOR JHG RETARGETING;
+- stop before destructive editing.
+
+Proceed only if a valid original-research article type can accommodate the study.
+
+======================================================================
+1. JOURNAL-FIT STRATEGY
+======================================================================
+
+Reposition the paper as:
+
+A HUMAN POPULATION-GENETICS / HUMAN-EVOLUTION STUDY
+
+with a rigorous dependence-aware framework for deciding whether an apparently unusual pair of human populations is truly exceptional relative to population-wide structure.
+
+Hierarchy:
+
+PRIMARY BIOLOGICAL DOMAIN
+- human population genetics
+- human evolution
+- archaic introgression
+- genome diversity
+- geographic population structure
+
+PRIMARY INFERENTIAL CONTRIBUTION
+- structural null for pairwise genomic similarity
+- repeated-population non-independence
+- pair-specific excess relative to population-wide structure
+
+SECONDARY METHOD
+- population-label permutation / QAP
+- residual inference
+- FDR
+
+FOCAL WORKED EXAMPLE
+- ABO
+
+ABO remains subordinate.
+
+======================================================================
+2. SCIENTIFIC CLAIM BOUNDARIES
+======================================================================
+
+The contribution is NOT:
+
+- a new statistical algorithm;
+- invention of QAP/MRQAP;
+- discovery that population structure matters;
+- discovery of a new archaic introgression event;
+- proof that any population pair lacks shared history;
+- a new migration-route claim;
+- a new ABO evolutionary discovery.
+
+The contribution IS:
+
+1. translating repeated-population dependence into a concrete human population-genetic inferential workflow;
+2. defining pair-specific excess relative to a population-wide structural expectation;
+3. combining QAP-preserved dependence, pair-level residual evidence, and multiplicity control;
+4. demonstrating that visually/narratively salient population pairs may not remain statistically exceptional;
+5. demonstrating this across 66 human populations using Neanderthal and Denisovan segment profiles;
+6. showing that ABO also does not exceed the genome-wide structural background.
+
+======================================================================
+3. ANALYSIS FREEZE — NON-NEGOTIABLE
+======================================================================
+
+ALL validated scientific analyses are frozen.
+
+Do NOT:
+
+- add datasets;
+- add populations;
+- add loci;
+- add simulations;
+- add power analyses;
+- add subgroup analyses;
+- change sample inclusion;
+- change window sizes;
+- change QAP models;
+- alter residual definitions;
+- change FDR procedures;
+- alter thresholds;
+- search for significant pairs;
+- add external validation.
+
+Do NOT change:
+
+- effect estimates
+- P values
+- q values
+- z scores
+- sample/population/pair counts
+- ABO statistics
+- figure/table values
+
+Rerun existing code only if required to regenerate unchanged files or verify consistency.
+
+If any scientific number changes unexpectedly:
+STOP and investigate.
+
+======================================================================
+4. AUDITED SOURCE OF TRUTH
+======================================================================
+
+Carry forward the validated Molecular Ecology audit state:
+
+- hostile-review conclusions
+- numeric reproducibility
+- text/figure/table consistency
+- hard-code audit
+- single-source-of-truth audit
+- reference-existence audit
+- reproducibility execution audit
+
+Do NOT reintroduce any fixed inconsistency.
+
+Verify unchanged:
+
+- 3,134 individuals
+- 66 populations
+- 2,145 total pairs
+- 62 non-admixed populations
+- 1,891 non-admixed pairs
+- Neanderthal raw r = -0.497
+- Denisovan raw r = -0.462
+- partial r = -0.369 and -0.326
+- QAP P = 0.0001 and 0.0002
+- largest residual z = 2.21 and 2.53
+- minimum BH q = 0.78 and 0.82
+- zero supported pairs
+- ABO Neanderthal z = 1.78, ~64th percentile, P = 0.36
+- ABO Denisovan z = 0.63, ~8th percentile, P = 0.92
+- usable-window counts = 3,843 and 1,385
+- ABO segment counts and Table S1 values as validated.
+
+======================================================================
+5. TITLE
+======================================================================
+
+Evaluate the existing title first:
+
+"Population structure defines the null expectation for pairwise genomic similarity: archaic-segment sharing across 66 human populations"
+
+Possible alternatives only if clearly better:
+
+1.
+"Population structure defines the null expectation for pairwise archaic-segment similarity"
+
+2.
+"Testing exceptional archaic-segment similarity against population structure across human populations"
+
+3.
+"A structural null for exceptional pairwise genomic similarity across human populations"
+
+Do NOT change merely to differ from previous submissions.
+
+Create:
+JHG_TITLE_DECISION.md
+
+======================================================================
+6. ABSTRACT
+======================================================================
+
+Retarget toward JHG readership.
+
+Emphasize:
+
+- human population structure
+- archaic introgression
+- human evolutionary interpretation
+- repeated-population non-independence
+- structural-null framework
+
+Preserve quantitative results.
+
+Reduce cross-species/ecological generalization.
+
+Do NOT force clinical relevance.
+
+Do NOT make ABO central.
+
+Respect the current verified JHG abstract limit.
+
+======================================================================
+7. INTRODUCTION
+======================================================================
+
+Do NOT rewrite from zero.
+
+Preserve:
+
+1. pairwise genomic comparison in population genetics;
+2. non-independence when same populations recur;
+3. structural null;
+4. QAP / matrix permutation;
+5. prior work showing population structure can distort inference;
+6. archaic ancestry as empirical system;
+7. ABO as focal example;
+8. three study questions.
+
+For JHG:
+
+A. OPEN WITH HUMAN POPULATION GENETICS
+
+Start from human population-genetic comparisons, shared ancestry, geographic population structure, and archaic introgression.
+
+B. GENERALITY
+
+Retain only a short statement that the inferential issue may extend to other repeated-unit genomic matrices.
+
+Do not make cross-species generality the reason for publication.
+
+C. HUMAN EVOLUTION
+
+Strengthen why this matters for:
+
+- human population-history interpretation
+- archaic introgression narratives
+- genome diversity
+- apparently exceptional relationships among human populations
+
+D. PRIOR ART
+
+Preserve honest novelty boundary:
+
+- QAP is established
+- population-structure bias is established
+- contribution is pair-specific structural-null inference
+
+======================================================================
+8. JHG-SPECIFIC CITATION ECOLOGY
+======================================================================
+
+Perform a targeted audit focused on JHG and closely related human population-genetics literature.
+
+Search for:
+
+- human population structure
+- human evolution
+- archaic introgression
+- genome diversity
+- spatial population genetics
+- demographic-model misspecification
+- pairwise population comparison
+- statistical/computational human genetics
+
+Create:
+JHG_CITATION_ECOLOGY.md
+
+Identify 5–10 genuinely closest studies.
+
+For each:
+
+- citation
+- journal
+- research question
+- data
+- method
+- estimand
+- result
+- overlap with current manuscript
+- exact distinction
+
+Inspect recent JHG population-genetics/human-evolution papers to confirm current journal neighborhood.
+
+Do NOT add JHG citations merely to game journal fit.
+
+Every added citation must support a real scientific claim.
+
+======================================================================
+9. NOVELTY / PRIOR-ART GATE
+======================================================================
+
+Create:
+JHG_CLOSEST_PRIOR_STUDIES.md
+
+Explicitly distinguish:
+
+KNOWN
+
+- population structure affects human demographic inference
+- archaic ancestry is geographically structured
+- QAP / matrix permutation are established
+- pairwise population comparisons are widely used
+
+CURRENT CONTRIBUTION
+
+- pair-specific similarity is evaluated relative to the relational structure generated by the whole population set
+- repeated-population dependence is preserved
+- pair-level residual evidence and multiplicity are evaluated together
+- framework is demonstrated on real archaic-segment profiles across 66 populations
+
+Ask explicitly:
+
+"Would a skeptical JHG editor see this as merely a technical re-analysis of public archaic-introgression data?"
+
+If YES or MAYBE:
+strengthen biological/inferential importance without inventing novelty.
+
+If prior art substantially collapses the contribution:
+STOP and classify NOT READY.
+
+======================================================================
+10. METHODS
+======================================================================
+
+Scientific Methods remain unchanged.
+
+Only adapt:
+
+- presentation
+- section order
+- journal style
+- data/code statement placement
+- ethics/disclosure placement
+
+Keep Methods dry.
+
+Ensure a human geneticist can clearly understand:
+
+- how population profiles were constructed
+- what pairwise similarity means
+- why pair rows are non-independent
+- how QAP preserves population recurrence
+- how pair-specific residual P values are generated
+- how FDR is applied
+- what ABO focal test actually tests
+
+Preserve caveats:
+
+- similarity ≠ identity by descent
+- model is descriptive, not causal
+- broad structure is not a complete demographic model
+
+======================================================================
+11. RESULTS
+======================================================================
+
+Keep validated structure unless current JHG limits require compacting:
+
+1.
+Archaic-segment similarity shows broad population structure
+
+2.
+No population pair exceeds the structural expectation after multiplicity control
+
+3.
+Population-wide structure is robust to analytical choices
+
+4.
+ABO does not exceed the genome-wide structural background
+
+No new results.
+
+No new analysis.
+
+If JHG requires a concise Article format:
+
+- preserve primary findings in main text
+- move robustness detail to Supplement
+- retain essential methodological caveats and primary results
+
+======================================================================
+12. DISCUSSION
+======================================================================
+
+Retarget toward human population genetics.
+
+Preferred emphasis:
+
+1. main human population-genetic result
+2. structural-null interpretation for repeated human population comparisons
+3. novelty boundary vs established population-structure / QAP literature
+4. implications for archaic-introgression and human population-history narratives
+5. ABO as one worked example
+6. limitations
+7. one concise broader inference statement
+
+Reduce long non-human transferability discussion.
+
+Do NOT claim:
+
+- absence of shared history
+- absence of gene flow
+- invalidity of a specific migration route unless directly tested
+- general validation across species
+
+======================================================================
+13. NEGATIVE RESULT POSITIONING
+======================================================================
+
+Create:
+JHG_NEGATIVE_RESULT_AUDIT.md
+
+Ensure the manuscript explains why zero supported pairs is biologically/scientifically informative:
+
+- apparently unusual pairwise similarity may be fully compatible with broad human population structure
+- visual or narrative salience is not equivalent to statistical exceptionality
+- a negative residual test constrains pair-specific interpretation
+- modest pair-specific effects may remain undetected
+- no supported excess ≠ no shared history
+
+Do NOT add power analysis.
+
+======================================================================
+14. FIGURES / TABLES
+======================================================================
+
+Use current validated figures as the starting point.
+
+Assess against CURRENT JHG figure/table limits.
+
+If the current JHG article type has a strict main-figure/table cap, prioritize main-text items in this order:
+
+1. Figure 1 — conceptual structural-null workflow
+2. Figure 2 — geographic distance association
+3. Figure 4 — pair-specific residual/FDR result
+4. Figure 3 — similarity matrix
+5. Figure 5 — robustness
+6. Table 1
+
+Move lower-priority items to Supplement only if required.
+
+Do NOT delete scientific information.
+
+Do NOT alter plotted values.
+
+Create:
+JHG_FIGURE_TABLE_DECISIONS.md
+
+Explicitly justify every moved item.
+
+======================================================================
+15. SUPPLEMENTARY INFORMATION
+======================================================================
+
+Preserve the latest validated SI/data descriptions.
+
+If JHG's main article format is concise, use Supplement strategically for:
+
+- full matrices
+- robustness grids
+- detailed ABO context
+- Table S1
+- supplementary figures
+- extended data documentation
+
+But the main paper must remain self-contained.
+
+Verify JHG's requirement for a Supplementary "read-me" file.
+
+If required, create one using the existing validated data documentation.
+
+======================================================================
+16. DATA / CODE AVAILABILITY
+======================================================================
+
+Preserve accurate public resources:
+
+- source hmmix data / Zenodo
+- ancient ABO source / Dryad
+- public GitHub repository
+- derived-data archive
+
+Repository:
+
+https://github.com/bougtoir/denisovan-archaic-dna-analysis
+
+Verify all scripts named in the manuscript are publicly present.
+
+Do not claim an archive DOI that does not exist.
+
+If JHG accepts supplementary archive submission rather than mandatory repository deposition at initial submission, follow current policy.
+
+======================================================================
+17. AI / LLM DISCLOSURE
+======================================================================
+
+Preserve the existing truthful disclosure.
+
+Modify only if current JHG / Springer Nature policy requires specific wording, location, or heading.
+
+Do not expand beyond actual use.
+
+======================================================================
+18. ETHICS / INDIGENOUS DATA GOVERNANCE
+======================================================================
+
+Preserve concise, accurate statements on:
+
+- secondary use of public genomic data
+- no new recruitment
+- source-study approvals/consent
+- Indigenous genomic-data governance
+- CARE principles where already used
+- no route assignment from these data
+
+Do not make the manuscript more defensive than necessary.
+
+======================================================================
+19. COVER LETTER — HIGH PRIORITY
+======================================================================
+
+Create a NEW JHG cover letter.
+
+Use FIRST PERSON SINGULAR ("I").
+
+Tone:
+confident, high-energy, scientifically calibrated.
+
+The letter should communicate:
+
+1. BIOLOGICAL PROBLEM
+
+Pairwise comparisons are central to human population genetics and human evolutionary inference, but repeated use of the same populations makes those dyads statistically dependent.
+
+2. SPECIFIC GAP
+
+Broad population structure is known, but individual pairs are still easily interpreted as historically special without testing whether they exceed the full population-wide expectation.
+
+3. CONTRIBUTION
+
+The paper operationalizes an explicit structural-null workflow using:
+
+- complete population-pair matrix
+- population-label permutation / QAP
+- pair-specific residual evidence
+- multiplicity control
+
+4. EMPIRICAL SYSTEM
+
+3,134 individuals
+66 human populations
+2,145 pairs
+Neanderthal and Denisovan archaic-segment profiles
+
+5. MAIN FINDING
+
+Strong population-wide structure; no pair remains FDR-supported as exceptional; ABO also does not exceed genome-wide background.
+
+6. WHY THIS MATTERS FOR HUMAN GENETICS
+
+The study separates:
+
+"two populations look genomically similar"
+
+from
+
+"they are more similar than human population structure predicts."
+
+7. WHY JHG
+
+Use JHG's verified scope:
+
+- population genetics
+- human evolution
+- genome diversity
+- human genome analysis
+
+Do not force clinical relevance.
+
+8. NOVELTY BOUNDARY
+
+State honestly:
+
+- population structure is known
+- QAP is established
+- contribution lies in the pair-specific structural-null workflow and its human archaic-genomic demonstration
+
+9. PRIOR REJECTIONS
+
+Do NOT mention prior journals unless JHG explicitly asks.
+
+10. SINGLE AUTHOR
+
+Use "I", never "we".
+
+======================================================================
+20. HOSTILE JHG REVIEW
+======================================================================
+
+Perform four adversarial reviews.
+
+A. JHG EDITOR
+
+Ask:
+
+- Is this sufficiently important to human genetics?
+- Is the human evolutionary question clear?
+- Is this more than descriptive population genetics?
+- Is this more than a QAP application?
+- Is a negative result sufficiently informative?
+- Is the article type/length appropriate?
+
+B. HUMAN POPULATION GENETICIST
+
+Ask:
+
+- Is archaic-segment profile similarity biologically meaningful?
+- Is population structure appropriately modeled?
+- Are demographic interpretations calibrated?
+- Are source-panel heterogeneity and sparse Denisovan signal handled?
+
+C. STATISTICAL GENETICIST
+
+Ask:
+
+- Is repeated-unit dependence correctly framed?
+- Is QAP appropriate?
+- Are pair-level residual P values coherent?
+- Is BH FDR wording defensible?
+- Is the structural-null term appropriately limited?
+
+D. HUMAN EVOLUTION READER
+
+Ask:
+
+- Does the study materially improve interpretation of human population-history claims?
+- Does ABO add value without distracting?
+- Is the negative result biologically useful?
+
+Create:
+JHG_HOSTILE_REVIEW.md
+
+Classify every issue:
+
+- BLOCKING
+- MAJOR
+- MINOR
+- NO ISSUE
+
+Fix all BLOCKING and MAJOR issues that do not require new analysis.
+
+======================================================================
+21. FINAL NUMERIC / REPRODUCIBILITY / FIGURE-TABLE / REFERENCE GATE
+======================================================================
+
+Do NOT repeat a wasteful full software-release audit if the audited Molecular Ecology source package already passed.
+
+Instead perform a targeted confirmation that the JHG retarget introduced no drift.
+
+Verify:
+
+- all key manuscript numbers unchanged
+- all figure/table values unchanged
+- all SI numbers unchanged
+- all references still exist
+- any JHG-specific newly added references are DOI/PubMed/publisher verified
+- no stale Molecular Ecology text remains
+- no stale Human Genetics/Heredity/Molecular Ecology journal-target language remains
+- no result hard-coding was introduced by retargeting
+
+Create:
+JHG_FINAL_CONSISTENCY_AUDIT.md
+
+Final status:
+PASS / FAIL
+
+======================================================================
+22. REFERENCE STYLE
+======================================================================
+
+Reformat references to CURRENT JHG style.
+
+Do not assume Nature/Heredity/Molecular Ecology style is identical.
+
+Validate all added/modified references.
+
+Create:
+JHG_REFERENCE_AUDIT.md
+
+======================================================================
+23. SUBMISSION FORMAT QC
+======================================================================
+
+Apply CURRENT JHG rules exactly.
+
+Verify:
+
+- article type
+- title page
+- abstract length
+- keyword count
+- manuscript word count
+- figure/table limit
+- reference limit
+- review/anonymization model
+- line numbering
+- declarations
+- data/code statements
+- AI disclosure
+- supplementary read-me
+- file naming
+- separate/embedded figures as required
+
+Create:
+JHG_SUBMISSION_FORMAT_AUDIT.md
+
+======================================================================
+24. FEE / PUBLICATION ROUTE CHECK
+======================================================================
+
+The user requires a no-mandatory-APC/page-charge route.
+
+Verify CURRENT JHG fees from official sources.
+
+Final handoff must clearly state:
+
+- Traditional subscription publication available: YES/NO
+- Mandatory APC on traditional route: YES/NO
+- Mandatory page charges: YES/NO
+- Mandatory color charges: YES/NO
+- Optional OA APC: current amount if available
+- Any other unavoidable fee
+
+If the traditional route has unavoidable charges inconsistent with this policy:
+
+classify as FINANCIAL BLOCKER
+
+and STOP before submission packaging.
+
+======================================================================
+25. FINAL OUTPUTS
+======================================================================
+
+If no blocker exists, produce:
+
+1. JHG_MAIN_MANUSCRIPT.docx
+2. JHG_MAIN_MANUSCRIPT_inline_review.docx if useful
+3. JHG_TITLE_PAGE.docx
+4. JHG_COVER_LETTER.docx
+5. JHG_SUPPORTING_INFORMATION.docx
+6. JHG_SUPPLEMENTARY_README.docx or .txt if required
+7. validated data archive/data detail as required
+8. main figures
+9. supplementary figures
+10. tables
+11. JHG_REQUIREMENTS_AUDIT.md
+12. JHG_TITLE_DECISION.md
+13. JHG_CITATION_ECOLOGY.md
+14. JHG_CLOSEST_PRIOR_STUDIES.md
+15. JHG_NEGATIVE_RESULT_AUDIT.md
+16. JHG_FIGURE_TABLE_DECISIONS.md
+17. JHG_HOSTILE_REVIEW.md
+18. JHG_FINAL_CONSISTENCY_AUDIT.md
+19. JHG_REFERENCE_AUDIT.md
+20. JHG_SUBMISSION_FORMAT_AUDIT.md
+21. SUBMISSION_CHECKLIST_JHG.md
+22. FINAL_HANDOFF_JHG.md
+23. DEVIN_JHG_RETARGET_PROMPT.txt
+
+Final package:
+
+JHG_SUBMISSION_FINAL.zip
+
+======================================================================
+26. FINAL_HANDOFF_JHG.md MUST INCLUDE
+======================================================================
+
+A. final title
+
+B. selected article type and exact current limits
+
+C. why this paper fits JHG
+
+D. what changed from Molecular Ecology version
+
+E. confirmation analysis remained frozen
+
+F. key numerical results
+
+G. exact novelty statement
+
+H. closest-prior-study boundary
+
+I. why this is more than a QAP re-analysis
+
+J. negative-result significance
+
+K. figure/table decisions
+
+L. reference-style status
+
+M. supplementary-material strategy
+
+N. data/code availability
+
+O. current fee status
+
+P. exact upload-ready filenames
+
+Q. unresolved local-author items
+
+R. final verdict:
+
+READY FOR JHG SUBMISSION
+
+or
+
+NOT READY — with specific blocker
+
+======================================================================
+STOP CONDITION
+======================================================================
+
+Do not open a new scientific workstream.
+
+Do not add analyses to chase novelty.
+
+Do not compress destructively merely to force fit.
+
+The objective is to maximize JHG fit by:
+
+- centering human population genetics and human evolution
+- preserving the validated structural-null contribution
+- keeping ABO subordinate
+- maintaining exact audited science
+- using the correct current JHG article format
+- ensuring a no-mandatory-fee publication route
+
+Stop only when genuinely submission-ready or when a concrete scientific, format, or financial blocker remains.
